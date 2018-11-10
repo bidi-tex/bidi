@@ -338,7 +338,7 @@ by Vafa Khalighi.
 %\iffalse
 %<*table>
 %\fi
-%% \CheckSum{49976}
+%% \CheckSum{50046}
 %% \CharacterTable
 %%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
 %%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
@@ -13117,7 +13117,7 @@ bidi implementation of tufte title]
 %\fi
 % \section{File \texttt{hyperref-xetex-bidi.def}}
 %    \begin{macrocode}
-\ProvidesFile{hyperref-xetex-bidi.def}[2017/08/09 v1.0 bidi adaptations for hyperref package for XeTeX engine]
+\ProvidesFile{hyperref-xetex-bidi.def}[2018/11/11 v1.1 bidi adaptations for hyperref package for XeTeX engine]
 \AtBeginDocument{%
 \def\contentsline#1#2#3#4{%
   \ifx\\#4\\%
@@ -13661,8 +13661,8 @@ bidi implementation of tufte title]
 \let\LR\@firstofone
 \let\RLE\@firstofone
 \let\RL\@firstofone
-\def\XeTeX{Xe\TeX}
-\def\XeLaTeX{Xe\LaTeX}
+\def\XeTeX{Xe\TeX}%
+\def\XeLaTeX{Xe\LaTeX}%
 }
 \@ifpackageloaded{longtable}{%
   \begingroup
@@ -13695,6 +13695,72 @@ bidi implementation of tufte title]
     }%
   \expandafter\x\LT@start\@nil
 }{}
+\bidi@patchcmd\@TextField{%
+  \@pdfm@mark
+}{%
+  \if@RTL
+    \hskip\Fld@width
+  \fi
+  \@pdfm@mark
+}{}{}
+\bidi@patchcmd\@TextField{%
+  \unhbox
+}{%
+  \if@RTL
+    \hskip-\Fld@width
+  \fi
+  \unhbox
+}{}{}
+\bidi@patchcmd\@@Radio{%
+  \@pdfm@mark
+}{%
+  \if@RTL
+    \hskip\Fld@width
+  \fi
+  \@pdfm@mark
+}{}{}
+\bidi@patchcmd\@@Radio{%
+  \unhcopy
+}{%
+  \if@RTL
+    \hskip-\Fld@width
+  \fi
+  \unhcopy
+}{}{}
+\bidi@patchcmd\@Submit{%
+  \@pdfm@mark
+}{%
+  \if@RTL
+    \null
+    \hskip\wd\pdfm@box
+  \fi
+  \@pdfm@mark
+}{}{}
+\bidi@patchcmd\@Submit{%
+  \unhbox
+}{%
+  \if@RTL
+    \hskip-\wd\pdfm@box
+  \fi
+  \unhbox
+}{}{}
+\bidi@patchcmd\@Reset{%
+  \@pdfm@mark
+}{%
+  \if@RTL
+    \null
+    \hskip\wd\pdfm@box
+  \fi
+  \@pdfm@mark
+}{}{}
+\bidi@patchcmd\@Reset{%
+  \unhbox
+}{%
+  \if@RTL
+    \hskip-\wd\pdfm@box
+  \fi
+  \unhbox
+}{}{}
 %    \end{macrocode}
 % \iffalse
 %</hyperref-xetex-bidi.def>
