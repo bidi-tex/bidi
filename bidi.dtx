@@ -5,50 +5,26 @@
 %<*readme>
 ___________________
 The bidi package
-v35.1
+v35.2
 
 This package provides a convenient interface for typesetting
 bidirectional texts in Plain TeX and LaTeX, using XeTeX engine.
 
-If you enjoy the bidi package and want to support 
-the project, then please consider donating to the project. 
-It allows me to spend more time working on the bidi package,
-encourages me to continue, and is the perfect way to say 
-thank you!
-
-You can use My PayPal.Me to donate to the bidi package at 
-
-  <https://www.paypal.me/persiantex>
-
-If you have a problem using My PayPal.Me, then please email me
-at persian-tex@tug.org.
-
 If you want to report any bugs or typos and corrections in the
 documentation, or ask for any new features, or suggest any
-improvements, then please do not send any direct email to me; 
-I will not answer any direct email. Instead please use the issue tracker:
+improvements, or ask any questions about the package, then
+please use the issue tracker:
 
-  <https://sourceforge.net/p/persian-tex-dist/tickets>
+  <https://github.com/bidirtex/bidi/issues>
   
-In doing so, please always explain your issue well enough, and always
-include a minimal working example showing the issue.
-
-Please note that most of my spare time is pretty much occupied by
-TeX development and as a result, I am afraid that I can not help users
-on a regular basis. Therefore, I ask all users to not email me
-and ask for help. However, there is a Persian TeX mailing list where 
-everyone can discuss Persian TeX related topics, ask and/or answer questions. This mailing list is the default media for Persian TeX 
-communications. I will try my best to answer questions on this
-mailing list whenever I have time. You can subscribe to the mailing list at
-
-  <http://tug.org/mailman/listinfo/persiantex>
+In doing so, please always explain your issue well enough, 
+and always include a minimal working example showing the 
+issue.
   
-  
-Current version release date: 2018/11/11
+Current version release date: 2018/12/07
 
 ___________________
 Vafa Khalighi
-persian-tex@tug.org
 
 Copyright (c) 2007--2018
 It may be distributed and/or modified under the LaTeX Project Public License,
@@ -68,7 +44,7 @@ by Vafa Khalighi.
 \preamble
 
   __________________________________________________
-  Copyright (c) 2009--2018  Vafa Khalighi <persian-tex@tug.org>
+  Copyright (c) 2009--2018  Vafa Khalighi 
 
   It may be distributed and/or modified under the LaTeX Project Public License,
   version 1.3c or higher (your choice). The latest version of
@@ -242,7 +218,7 @@ by Vafa Khalighi.
 \documentclass{ltxdoc}
 \input{bidi-doc-preamble.ltx}
 \hypersetup{%
-  pdftitle={Source documentation for version 35.1 of the bidi
+  pdftitle={Source documentation for version 35.2 of the bidi
                 package}%
 }
 \EnableCrossrefs
@@ -261,9 +237,8 @@ by Vafa Khalighi.
 % \GetFileInfo{\jobname.dtx}
 % \title{\textcolor{blue!65!black}{\Huge The \textsf{bidi} \textit{Package}}\\
 %\LARGE Bidirectional typesetting in plain \TeX{} and \LaTeX, using \XeTeX{} engine\\[5pt]
-%\large Source documentation for \textcolor{blue!65!black}{version 35.1}}
-% \author{Vafa Khalighi\\
-%  \url{persian-tex@tug.org}}
+%\large Source documentation for \textcolor{blue!65!black}{version 35.2}}
+% \author{Vafa Khalighi}
 %\setcounter{page}{0}
 %\thispagestyle{empty}
 %\includegraphics[width=.3\textwidth]{bidi-logo}\qquad
@@ -272,53 +247,22 @@ by Vafa Khalighi.
 %\textcolor{blue!65!black}{\Huge The \textsf{bidi} \textit{Package}}
 %
 %\Large
-%Source documentation for \textcolor{blue!65!black}{version 35.1}}
+%Source documentation for \textcolor{blue!65!black}{version 35.2}}
 %
 %\vskip 0pt plus 3fill
 %\textit{\large to my Master, \textbf{Ferdowsi The Great}}
 %
 %\vskip 0pt plus 3fill
-%
-%If you enjoy the \textsf{bidi} package and want to support 
-%the project, then please consider donating to the project. 
-%It allows me to spend more time working on the \textsf{bidi}
-%package, encourages me to continue, and is the perfect way to say 
-%thank you!
-%
-%You can use \textit{My PayPal.Me} to 
-%donate to the \textsf{bidi} package at 
-%
-%\medskip
-%  \centerline{\url{https://www.paypal.me/persiantex}}
-%
-%\medskip
-%If you have a problem using \textit{My PayPal.Me}, then please
-%email me at \url{persian-tex@tug.org}.
-%
-%\vskip 0pt plus 3fill
 %{\color{red!85!black}\fbox{\begin{minipage}{\dimexpr\textwidth-2\fboxsep-2\fboxrule}
 %If you want to report any bugs or typos and corrections in the documentation,
-%or ask for any new features, or suggest any improvements, then please do not send any direct email to me; I will not 
-%answer any direct email. Instead please use the issue tracker:
+%or ask for any new features, or suggest any improvements, or ask any questions about the package, then please use the issue tracker:
 %
 %\medskip
-%  \centerline{\url{https://sourceforge.net/p/persian-tex-dist/tickets}}
+%  \centerline{\url{https://github.com/bidirtex/bidi/issues}}
 %
 %\medskip
 %In doing so, please always explain your issue well enough, and always include
 %a minimal working example showing the issue. 
-%
-%\bigskip
-%Please note that most of my spare time is pretty much occupied by
-%\TeX{} development and as a result, I am afraid that I can not help users
-%on a regular basis. Therefore, I ask all users to not email me
-%and ask for help. However, there is a Persian \TeX{} mailing list where 
-%everyone can discuss Persian \TeX{} related topics, ask and/or answer questions. This mailing list is the default media for Persian \TeX{} 
-%communications. I will try my best to answer questions on this
-%mailing list whenever I have time. 
-%You can subscribe to the mailing list at 
-%\medskip
-%  \centerline{\url{http://tug.org/mailman/listinfo/persiantex}}
 %\end{minipage}
 %}}
 %
@@ -1951,8 +1895,8 @@ by Vafa Khalighi.
 % \section{File \texttt{bidi.sty}}
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
-\def\bididate{2018/11/11}
-\def\bidi@version{35.1}
+\def\bididate{2018/12/07}
+\def\bidi@version{35.2}
 \ProvidesPackage{bidi}[\bididate\space v\bidi@version\space
 Bidirectional typesetting in plain TeX and LaTeX]
 \edef\@bidi@info{****************************************************^^J%
@@ -1974,9 +1918,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
 * ^^J%
 * Location on CTAN: /macros/xetex/latex/bidi^^J%
 * ^^J%
-* Issue tracker: https://sourceforge.net/p/persian-tex-dist/tickets^^J%
-* ^^J%
-* Support: http://tug.org/mailman/listinfo/persiantex^^J%
+* Issue tracker: https://github.com/bidirtex/bidi/issues^^J%
 * ^^J%
 ****************************************************}
 \typeout{\@bidi@info}
@@ -2037,7 +1979,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
 }
 \newcommand*{\@bidi@pdfcustomproperties}{%
   This is the bidi package, Version \bidi@version,
-  Released November 11, 2018. 
+  Released December 07, 2018. 
 }
 \@RTLmainfalse
 \AtBeginDocument{%
@@ -2279,9 +2221,9 @@ Bidirectional typesetting in plain TeX and LaTeX]
 %\fi
 % \section{File \texttt{bidi.tex}}
 %    \begin{macrocode}
-\def\bididate{2018/11/11}
+\def\bididate{2018/12/07}
 \catcode`@=11
-\def\bidi@version{35.1}
+\def\bidi@version{35.2}
 \let \protect \relax
 \newlinechar`\^^J
 \edef\@bidi@info{****************************************************^^J%
@@ -2303,9 +2245,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
 * ^^J%
 * Location on CTAN: /macros/xetex/latex/bidi^^J%
 * ^^J%
-* Issue tracker: https://sourceforge.net/p/persian-tex-dist/tickets^^J%
-* ^^J%
-* Support: http://tug.org/mailman/listinfo/persiantex^^J%
+* Issue tracker: https://github.com/bidirtex/bidi/issues^^J%
 * ^^J%
 ****************************************************}
 \message{\@bidi@info}
@@ -2380,7 +2320,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
 }
 \def\@bidi@pdfcustomproperties{%
   This is the bidi package, Version \bidi@version,
-  Released November 11, 2018. 
+  Released December 07, 2018. 
 }
 \def\bidi@pdfm@mark{%
   \special{pdf:%
@@ -25213,7 +25153,7 @@ dynamic frame when using one of the \cmdname{Ncolumntop} type of commands.
 \mobile{۰۹۱۸۹۶۹۴۹۶}
 \phone{۹۸۹۰۸۳۴۱}
 \fax{۹۸۹۰۸۳۴۲}
-\email{persian-tex@tug.org}
+\email{me@somedomain.com}
 \extrainfo{اطلاعات اضافی}
 \photo[64pt]{picture}
 \quote{نقل قول}
@@ -25286,7 +25226,7 @@ dynamic frame when using one of the \cmdname{Ncolumntop} type of commands.
 \mobile{۰۹۱۸۹۶۹۴۹۶}
 \phone{۹۸۹۰۸۳۴۱}
 \fax{۹۸۹۰۸۳۴۲}
-\email{persian-tex@tug.org}
+\email{me@somedomain.com}
 \extrainfo{اطلاعات اضافی}
 \photo[64pt]{picture}
 \quote{نقل قول}
