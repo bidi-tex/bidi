@@ -5,7 +5,7 @@
 %<*readme>
 ___________________
 The bidi package
-v35.2
+v35.3
 
 This package provides a convenient interface for typesetting
 bidirectional texts in Plain TeX and LaTeX, using XeTeX engine.
@@ -21,7 +21,7 @@ In doing so, please always explain your issue well enough,
 and always include a minimal working example showing the 
 issue.
   
-Current version release date: 2018/12/07
+Current version release date: 2018/12/10
 
 ___________________
 Vafa Khalighi
@@ -218,7 +218,7 @@ by Vafa Khalighi.
 \documentclass{ltxdoc}
 \input{bidi-doc-preamble.ltx}
 \hypersetup{%
-  pdftitle={Source documentation for version 35.2 of the bidi
+  pdftitle={Source documentation for version 35.3 of the bidi
                 package}%
 }
 \EnableCrossrefs
@@ -237,7 +237,7 @@ by Vafa Khalighi.
 % \GetFileInfo{\jobname.dtx}
 % \title{\textcolor{blue!65!black}{\Huge The \textsf{bidi} \textit{Package}}\\
 %\LARGE Bidirectional typesetting in plain \TeX{} and \LaTeX, using \XeTeX{} engine\\[5pt]
-%\large Source documentation for \textcolor{blue!65!black}{version 35.2}}
+%\large Source documentation for \textcolor{blue!65!black}{version 35.3}}
 % \author{Vafa Khalighi}
 %\setcounter{page}{0}
 %\thispagestyle{empty}
@@ -247,7 +247,7 @@ by Vafa Khalighi.
 %\textcolor{blue!65!black}{\Huge The \textsf{bidi} \textit{Package}}
 %
 %\Large
-%Source documentation for \textcolor{blue!65!black}{version 35.2}}
+%Source documentation for \textcolor{blue!65!black}{version 35.3}}
 %
 %\vskip 0pt plus 3fill
 %\textit{\large to my Master, \textbf{Ferdowsi The Great}}
@@ -282,7 +282,7 @@ by Vafa Khalighi.
 %\iffalse
 %<*table>
 %\fi
-%% \CheckSum{50046}
+%% \CheckSum{50078}
 %% \CharacterTable
 %%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
 %%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
@@ -1895,8 +1895,8 @@ by Vafa Khalighi.
 % \section{File \texttt{bidi.sty}}
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
-\def\bididate{2018/12/07}
-\def\bidi@version{35.2}
+\def\bididate{2018/12/10}
+\def\bidi@version{35.3}
 \ProvidesPackage{bidi}[\bididate\space v\bidi@version\space
 Bidirectional typesetting in plain TeX and LaTeX]
 \edef\@bidi@info{****************************************************^^J%
@@ -1979,7 +1979,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
 }
 \newcommand*{\@bidi@pdfcustomproperties}{%
   This is the bidi package, Version \bidi@version,
-  Released December 07, 2018. 
+  Released December 10, 2018. 
 }
 \@RTLmainfalse
 \AtBeginDocument{%
@@ -2221,9 +2221,9 @@ Bidirectional typesetting in plain TeX and LaTeX]
 %\fi
 % \section{File \texttt{bidi.tex}}
 %    \begin{macrocode}
-\def\bididate{2018/12/07}
+\def\bididate{2018/12/10}
 \catcode`@=11
-\def\bidi@version{35.2}
+\def\bidi@version{35.3}
 \let \protect \relax
 \newlinechar`\^^J
 \edef\@bidi@info{****************************************************^^J%
@@ -2320,7 +2320,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
 }
 \def\@bidi@pdfcustomproperties{%
   This is the bidi package, Version \bidi@version,
-  Released December 07, 2018. 
+  Released December 10, 2018. 
 }
 \def\bidi@pdfm@mark{%
   \special{pdf:%
@@ -3081,7 +3081,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
 % \section{File \texttt{biditools.sty}}
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{biditools}[2018/10/12 v1.7 Programming tools for bidi package]
+\ProvidesPackage{biditools}[2018/12/10 v1.8 Programming tools for bidi package]
 \providecommand{\@bidi@saveprimitive}[2]{\begingroup\escapechar`\\\relax
   \edef\@tempa{\string#1}\edef\@tempb{\meaning#1}%
   \ifx\@tempa\@tempb \global\let#2#1%
@@ -4083,22 +4083,30 @@ ill-advised in the old versions of bidi package.%
 \long\def\@bidi@prepend@to@cslist#1#2#3{\begingroup\bidi@toks@lista=#2{#3}%
   \global#1=\expandafter\expandafter\expandafter{\expandafter\the\expandafter\bidi@toks@lista\the#1}\endgroup}
 \def\@bidi@append@to@list{\bidi@csarg\@bidi@append@to@cslist}
+\def\@bidi@prepend@to@list{\bidi@csarg\@bidi@prepend@to@cslist}
 % variations:
 \long\def\bidi@append@to@list#1#2{\@bidi@append@to@list{#1}{}{#2}}
+\long\def\bidi@prepend@to@list#1#2{\@bidi@prepend@to@list{#1}{}{#2}}
 \def\bidi@append@list@to@list#1#2{%
   \@bidi@append@to@list{#1}{\expandafter\expandafter\expandafter}{\expandafter\the\csname#2\endcsname}}
+\def\bidi@prepend@list@to@list#1#2{%
+  \@bidi@prepend@to@list{#1}{\expandafter\expandafter\expandafter}{\expandafter\the\csname#2\endcsname}}
 \def\bidi@append@cslist@to@cslist#1#2{%
   \@bidi@append@to@cslist{#1}\expandafter{\the#2}}
+\def\bidi@prepend@cslist@to@cslist#1#2{%
+  \@bidi@prepend@to@cslist{#1}\expandafter{\the#2}}
 \def\bidi@append@toks@cs@to@list#1#2{\@bidi@append@to@list{#1}\expandafter{\the#2}}
+\def\bidi@prepend@toks@cs@to@list#1#2{\@bidi@prepend@to@list{#1}\expandafter{\the#2}}
 
 \let\bidi@willbeunhskip\unhskip
 
 % A few list macros for the user
-\def\NewList:#1 {\bidi@csarg\newtoks{#1}\global\csname#1\endcsname{}}
-\def\EmptyList:#1 {\global\csname#1\endcsname{}}
-\long\def\AppendToList:#1=#2 {\@bidi@append@to@list{#1}{}{#2}}
-\def\TheList:#1 {\let\bidi@oldwbuskip\bidi@willbeunhskip \let\bidi@willbeunhskip\@empty
-    \if\bidi@undefinedcs{#1}\bidi@error{List <#1> undefined}
+\def\NewTokenList:#1 {\bidi@csarg\newtoks{#1}\global\csname#1\endcsname{}}
+\def\EmptyTokenList:#1 {\global\csname#1\endcsname{}}
+\long\def\AppendToTokenList:#1=#2 {\@bidi@append@to@list{#1}{}{#2}}
+\long\def\PrependToTokenList:#1=#2 {\@bidi@prepend@to@list{#1}{}{#2}}
+\def\TheTokenList:#1 {\let\bidi@oldwbuskip\bidi@willbeunhskip \let\bidi@willbeunhskip\@empty
+    \if\bidi@undefinedcs{#1}\bidi@error{Token List <#1> undefined}
     \else\bidi@csarg\the{#1}\fi
     \let\bidi@willbeunhskip\bidi@oldwbuskip}
 
