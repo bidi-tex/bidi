@@ -5,7 +5,7 @@
 %<*readme>
 ___________________
 The bidi package
-v35.4
+v35.5
 
 This package provides a convenient interface for typesetting
 bidirectional texts in Plain TeX and LaTeX, using XeTeX engine.
@@ -15,24 +15,24 @@ documentation, or ask for any new features, or suggest any
 improvements, or ask any questions about the package, then
 please use the issue tracker:
 
-  <https://github.com/bidirtex/bidi/issues>
+  <https://github.com/bidi-tex/bidi/issues>
   
 In doing so, please always explain your issue well enough, 
 and always include a minimal working example showing the 
 issue.
   
-Current version release date: 2018/12/11
+Current version release date: 2019/01/09
 
 ___________________
-Vafa Khalighi
+Vafa Khalighi Copyright (c) 2007--2018
+Vafa Khalighi and bidi-tex group Copyright (c) 2019
 
-Copyright (c) 2007--2018
 It may be distributed and/or modified under the LaTeX Project Public License,
 version 1.3c or higher (your choice). The latest version of
 this license is at: http://www.latex-project.org/lppl.txt
 
-This work is “author-maintained” (as per LPPL maintenance status) 
-by Vafa Khalighi.
+This work is “maintained” (as per LPPL maintenance status) 
+by Vafa Khalighi and bidi-tex github group
 %</readme>
 %<*internal>
 \fi
@@ -50,8 +50,8 @@ by Vafa Khalighi.
   version 1.3c or higher (your choice). The latest version of
   this license is at: http://www.latex-project.org/lppl.txt
 
-  This work is “author-maintained” (as per LPPL maintenance status) 
-  by Vafa Khalighi.
+  This work is “maintained” (as per LPPL maintenance status) 
+  by Vafa Khalighi abd bidi-tex github group.
 
 
 \endpreamble
@@ -218,7 +218,7 @@ by Vafa Khalighi.
 \documentclass{ltxdoc}
 \input{bidi-doc-preamble.ltx}
 \hypersetup{%
-  pdftitle={Source documentation for version 35.4 of the bidi
+  pdftitle={Source documentation for version 35.5 of the bidi
                 package}%
 }
 \EnableCrossrefs
@@ -237,7 +237,7 @@ by Vafa Khalighi.
 % \GetFileInfo{\jobname.dtx}
 % \title{\textcolor{blue!65!black}{\Huge The \textsf{bidi} \textit{Package}}\\
 %\LARGE Bidirectional typesetting in plain \TeX{} and \LaTeX, using \XeTeX{} engine\\[5pt]
-%\large Source documentation for \textcolor{blue!65!black}{version 35.4}}
+%\large Source documentation for \textcolor{blue!65!black}{version 35.5}}
 % \author{Vafa Khalighi}
 %\setcounter{page}{0}
 %\thispagestyle{empty}
@@ -247,7 +247,7 @@ by Vafa Khalighi.
 %\textcolor{blue!65!black}{\Huge The \textsf{bidi} \textit{Package}}
 %
 %\Large
-%Source documentation for \textcolor{blue!65!black}{version 35.4}}
+%Source documentation for \textcolor{blue!65!black}{version 35.5}}
 %
 %\vskip 0pt plus 3fill
 %\textit{\large to my Master, \textbf{Ferdowsi The Great}}
@@ -258,7 +258,7 @@ by Vafa Khalighi.
 %or ask for any new features, or suggest any improvements, or ask any questions about the package, then please use the issue tracker:
 %
 %\medskip
-%  \centerline{\url{https://github.com/bidirtex/bidi/issues}}
+%  \centerline{\url{https://github.com/bidi-tex/bidi/issues}}
 %
 %\medskip
 %In doing so, please always explain your issue well enough, and always include
@@ -282,7 +282,7 @@ by Vafa Khalighi.
 %\iffalse
 %<*table>
 %\fi
-%% \CheckSum{50072}
+%% \CheckSum{50073}
 %% \CharacterTable
 %%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
 %%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
@@ -1895,8 +1895,8 @@ by Vafa Khalighi.
 % \section{File \texttt{bidi.sty}}
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
-\def\bididate{2018/12/11}
-\def\bidi@version{35.4}
+\def\bididate{2019/01/19}
+\def\bidi@version{35.5}
 \ProvidesPackage{bidi}[\bididate\space v\bidi@version\space
 Bidirectional typesetting in plain TeX and LaTeX]
 \edef\@bidi@info{****************************************************^^J%
@@ -1918,7 +1918,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
 * ^^J%
 * Location on CTAN: /macros/xetex/latex/bidi^^J%
 * ^^J%
-* Issue tracker: https://github.com/bidirtex/bidi/issues^^J%
+* Issue tracker: https://github.com/bidi-tex/bidi/issues^^J%
 * ^^J%
 ****************************************************}
 \typeout{\@bidi@info}
@@ -2221,9 +2221,9 @@ Bidirectional typesetting in plain TeX and LaTeX]
 %\fi
 % \section{File \texttt{bidi.tex}}
 %    \begin{macrocode}
-\def\bididate{2018/12/11}
+\def\bididate{2019/01/19}
 \catcode`@=11
-\def\bidi@version{35.4}
+\def\bidi@version{35.5}
 \let \protect \relax
 \newlinechar`\^^J
 \edef\@bidi@info{****************************************************^^J%
@@ -2245,7 +2245,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
 * ^^J%
 * Location on CTAN: /macros/xetex/latex/bidi^^J%
 * ^^J%
-* Issue tracker: https://github.com/bidirtex/bidi/issues^^J%
+* Issue tracker: https://github.com/bidi-tex/bidi/issues^^J%
 * ^^J%
 ****************************************************}
 \message{\@bidi@info}
@@ -14446,7 +14446,7 @@ bidi implementation of tufte title]
 %\fi
 % \section{File \texttt{longtable-xetex-bidi.def}}
 %    \begin{macrocode}
-\ProvidesFile{longtable-xetex-bidi.def}[2016/09/09 v0.4 bidi adaptations for longtable package for XeTeX engine]
+\ProvidesFile{longtable-xetex-bidi.def}[2019/01/19 v0.5 bidi adaptations for longtable package for XeTeX engine]
 \def\LT@array[#1]#2{%
   \refstepcounter{table}\stepcounter{LT@tables}%
   \if l#1%
@@ -14532,7 +14532,7 @@ bidi implementation of tufte title]
       \caption@end}}%
 }{}
 \def\LT@startpbox#1{%
-  \bgroup
+  \bgroup\color@begingroup
     \let\@footnotetext\LT@p@ftntext
     \let\@LTRfootnotetext\LT@p@LTRftntext
     \let\@RTLfootnotetext\LT@p@RTLftntext
