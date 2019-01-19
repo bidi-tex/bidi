@@ -1,0 +1,23 @@
+\documentclass{article}
+
+\input{regression-test}
+
+% bidi patch for longtable needing color groups
+% sx 470699
+
+\usepackage{longtable}
+
+%\usepackage{color}
+
+\usepackage{bidi}
+\begin {document}
+
+\START
+\begin{longtable} {p{1cm}c}
+
+a&b
+
+\end{longtable}
+
+
+\end{document}
