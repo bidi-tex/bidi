@@ -1,13 +1,11 @@
--- Build script for test-hyperref
 
--- Build script for hyperref  (check only)
 module = "bidi"
 docfiles = {'*.ltx'}
 installfiles = {'*.def','*.sty'}
 
 checkengines = {"xetex"}
 stdengine = "xetex"
-typesetexe = "xelatex --shell-escape"
+typesetexe = "xelatex"
 
 checkruns = 2
 
