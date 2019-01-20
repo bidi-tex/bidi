@@ -1,0 +1,3 @@
+# l3build ctan
+cp build/doc/bidi.ins .
+zip bidi-ctan.zip bidi.ins
