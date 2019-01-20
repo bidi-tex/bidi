@@ -1,11 +1,15 @@
 
 module = "bidi"
-docfiles = {'*.ltx'}
-installfiles = {'*.def','*.sty'}
+docfiles = {'*.ltx','bibitem.pdf','*.jpg'}
+installfiles = {'*.def','*.sty','*.jpg','bibitem.pdf'}
 
 checkengines = {"xetex"}
 stdengine = "xetex"
 typesetexe = "xelatex"
+typesetfiles = {"bidi.dtx","bidi-doc.ltx"}
+textfiles    =  {"README.md",'bidi.ins'}
+sourcefiles = {"*.dtx"}
+
 
 checkruns = 2
 
