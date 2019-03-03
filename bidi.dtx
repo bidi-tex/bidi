@@ -5,7 +5,7 @@
 %<*readme>
 ___________________
 The bidi package
-v35.6
+v35.7
 
 This package provides a convenient interface for typesetting
 bidirectional texts in Plain TeX and LaTeX, using XeTeX engine.
@@ -218,7 +218,7 @@ by Vafa Khalighi.
 \documentclass{ltxdoc}
 \input{bidi-doc-preamble.ltx}
 \hypersetup{%
-  pdftitle={Source documentation for version 35.6 of the bidi
+  pdftitle={Source documentation for version 35.7 of the bidi
                 package}%
 }
 \EnableCrossrefs
@@ -237,7 +237,7 @@ by Vafa Khalighi.
 % \GetFileInfo{\jobname.dtx}
 % \title{\textcolor{blue!65!black}{\Huge The \textsf{bidi} \textit{Package}}\\
 %\LARGE Bidirectional typesetting in plain \TeX{} and \LaTeX, using \XeTeX{} engine\\[5pt]
-%\large Source documentation for \textcolor{blue!65!black}{version 35.6}}
+%\large Source documentation for \textcolor{blue!65!black}{version 35.7}}
 % \author{Vafa Khalighi}
 %\setcounter{page}{0}
 %\thispagestyle{empty}
@@ -247,7 +247,7 @@ by Vafa Khalighi.
 %\textcolor{blue!65!black}{\Huge The \textsf{bidi} \textit{Package}}
 %
 %\Large
-%Source documentation for \textcolor{blue!65!black}{version 35.6}}
+%Source documentation for \textcolor{blue!65!black}{version 35.7}}
 %
 %\vskip 0pt plus 3fill
 %\textit{\large to my Master, \textbf{Ferdowsi The Great}}
@@ -282,7 +282,7 @@ by Vafa Khalighi.
 %\iffalse
 %<*table>
 %\fi
-%% \CheckSum{50062}
+%% \CheckSum{50080}
 %% \CharacterTable
 %%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
 %%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
@@ -1896,7 +1896,7 @@ by Vafa Khalighi.
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
 \def\bididate{2019/03/03}
-\def\bidi@version{35.6}
+\def\bidi@version{35.7}
 \ProvidesPackage{bidi}[\bididate\space v\bidi@version\space
 Bidirectional typesetting in plain TeX and LaTeX]
 \edef\@bidi@info{****************************************************^^J%
@@ -2223,7 +2223,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
 %    \begin{macrocode}
 \def\bididate{2019/03/03}
 \catcode`@=11
-\def\bidi@version{35.6}
+\def\bidi@version{35.7}
 \let \protect \relax
 \newlinechar`\^^J
 \edef\@bidi@info{****************************************************^^J%
@@ -21850,10 +21850,24 @@ to\rtside{\box\bslice\hfil}}
 \newcommand*{\bidi@rightskip}{\if@RTL\leftskip\else\rightskip\fi}
 \def\LTR{\par\@RTLfalse\@RTL@footnotefalse\@RTLtabfalse\hsize\linewidth\parshape\z@}
 \def\endLTR{\par}
-\newenvironment{LTR*}{\LTR}{\endLTR\@endpetrue}
+\newenvironment{LTR*}{\LTR
+  \everypar{%
+    {\setbox\z@\lastbox
+      \ifvoid\z@
+        \kern-\parindent
+    \fi}%
+  }%
+}{\endLTR\@endpetrue}
 \def\RTL{\par\@RTLtrue\@RTL@footnotetrue\@RTLtabtrue\hsize\linewidth\parshape\z@}
 \def\endRTL{\par}
-\newenvironment{RTL*}{\RTL}{\endRTL\@endpetrue}
+\newenvironment{RTL*}{\RTL
+  \everypar{%
+    {\setbox\z@\lastbox
+      \ifvoid\z@
+        \kern-\parindent
+    \fi}%
+  }%
+}{\endRTL\@endpetrue}
 \def\setRTL{\@RTLtrue\@RTL@footnotetrue\@RTLtabtrue}
 \def\setLTR{\@RTLfalse\@RTL@footnotefalse\@RTLtabfalse}
 \let\unsetRTL=\setLTR
