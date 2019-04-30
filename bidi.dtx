@@ -5,7 +5,7 @@
 %<*readme>
 ___________________
 The bidi package
-v35.7
+v35.8
 
 This package provides a convenient interface for typesetting
 bidirectional texts in Plain TeX and LaTeX, using XeTeX engine.
@@ -21,7 +21,7 @@ In doing so, please always explain your issue well enough,
 and always include a minimal working example showing the 
 issue.
   
-Current version release date: 2019/03/03
+Current version release date: 2019/05/01
 
 ___________________
 Vafa Khalighi
@@ -218,7 +218,7 @@ by Vafa Khalighi.
 \documentclass{ltxdoc}
 \input{bidi-doc-preamble.ltx}
 \hypersetup{%
-  pdftitle={Source documentation for version 35.7 of the bidi
+  pdftitle={Source documentation for version 35.8 of the bidi
                 package}%
 }
 \EnableCrossrefs
@@ -237,7 +237,7 @@ by Vafa Khalighi.
 % \GetFileInfo{\jobname.dtx}
 % \title{\textcolor{blue!65!black}{\Huge The \textsf{bidi} \textit{Package}}\\
 %\LARGE Bidirectional typesetting in plain \TeX{} and \LaTeX, using \XeTeX{} engine\\[5pt]
-%\large Source documentation for \textcolor{blue!65!black}{version 35.7}}
+%\large Source documentation for \textcolor{blue!65!black}{version 35.8}}
 % \author{Vafa Khalighi}
 %\setcounter{page}{0}
 %\thispagestyle{empty}
@@ -247,7 +247,7 @@ by Vafa Khalighi.
 %\textcolor{blue!65!black}{\Huge The \textsf{bidi} \textit{Package}}
 %
 %\Large
-%Source documentation for \textcolor{blue!65!black}{version 35.7}}
+%Source documentation for \textcolor{blue!65!black}{version 35.8}}
 %
 %\vskip 0pt plus 3fill
 %\textit{\large to my Master, \textbf{Ferdowsi The Great}}
@@ -282,7 +282,7 @@ by Vafa Khalighi.
 %\iffalse
 %<*table>
 %\fi
-%% \CheckSum{50080}
+%% \CheckSum{50084}
 %% \CharacterTable
 %%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
 %%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
@@ -1895,8 +1895,8 @@ by Vafa Khalighi.
 % \section{File \texttt{bidi.sty}}
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
-\def\bididate{2019/03/03}
-\def\bidi@version{35.7}
+\def\bididate{2019/05/01}
+\def\bidi@version{35.8}
 \ProvidesPackage{bidi}[\bididate\space v\bidi@version\space
 Bidirectional typesetting in plain TeX and LaTeX]
 \edef\@bidi@info{****************************************************^^J%
@@ -1979,7 +1979,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
 }
 \newcommand*{\@bidi@pdfcustomproperties}{%
   This is the bidi package, Version \bidi@version,
-  Released March 3, 2019. 
+  Released May 1, 2019. 
 }
 \@RTLmainfalse
 \AtBeginDocument{%
@@ -2221,9 +2221,9 @@ Bidirectional typesetting in plain TeX and LaTeX]
 %\fi
 % \section{File \texttt{bidi.tex}}
 %    \begin{macrocode}
-\def\bididate{2019/03/03}
+\def\bididate{2019/05/01}
 \catcode`@=11
-\def\bidi@version{35.7}
+\def\bidi@version{35.8}
 \let \protect \relax
 \newlinechar`\^^J
 \edef\@bidi@info{****************************************************^^J%
@@ -2320,7 +2320,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
 }
 \def\@bidi@pdfcustomproperties{%
   This is the bidi package, Version \bidi@version,
-  Released March 3, 2019. 
+  Released May 1, 2019. 
 }
 \def\bidi@pdfm@mark{%
   \special{pdf:%
@@ -13838,7 +13838,7 @@ bidi implementation of tufte title]
 %\fi
 % \section{File \texttt{lettrine-xetex-bidi.def}}
 %    \begin{macrocode}
-\ProvidesFile{lettrine-xetex-bidi.def}[2018/10/01 v0.6 bidi adaptations for lettrine package for XeTeX engine]
+\ProvidesFile{lettrine-xetex-bidi.def}[2019/05/01 v0.7 bidi adaptations for lettrine package for XeTeX engine]
 \def\@lettrine[#1]#2#3{%
   \def\l@initial{#2}\let\l@refstring\l@initial
   \setcounter{L@lines}{\value{DefaultLines}}%
@@ -13944,8 +13944,8 @@ bidi implementation of tufte title]
   \addtolength{\L@Nindent}{\L@Pindent}%
   \setlength{\L@next}{\linewidth}%
   \addtolength{\L@next}{-\L@Nindent}%
-  \addtolength{\L@Pindent}{\rightmargin}%
-  \addtolength{\L@Nindent}{\rightmargin}%
+  \addtolength{\L@Pindent}{\@totalleftmargin}%
+  \addtolength{\L@Nindent}{\@totalleftmargin}%
   \addtocounter{L@lines}{1}%
   \addtocounter{L@lines}{\value{L@depth}}%
   \if@RTL
@@ -13955,9 +13955,9 @@ bidi implementation of tufte title]
   \fi
   \@tempcnta=\tw@
   \@whilenum \@tempcnta<\c@L@lines\do{%
-    \if@RTL
-      \edef\L@parshape{\L@parshape \z@ \the\L@next}%
-    \else
+     \if@RTL
+       \edef\L@parshape{\L@parshape \z@ \the\L@next}%
+     \else
        \edef\L@parshape{\L@parshape \the\L@Nindent \the\L@next}%
      \fi
      \addtolength{\L@Nindent}{\L@slope}%
@@ -13966,13 +13966,14 @@ bidi implementation of tufte title]
   \if@RTL
     \edef\L@parshape{\L@parshape \z@ \the\linewidth}%
   \else
-    \edef\L@parshape{\L@parshape \rightmargin \the\linewidth}%
+    \edef\L@parshape{\L@parshape \@totalleftmargin \the\linewidth}%
   \fi
   \noindent
   \parshape=\L@parshape\relax
   \smash{\llap{\mbox{\L@ante}\raisebox{\L@lraise}{\usebox{\L@lbox}}%
          \hskip \the\L@Findent}}%
   \usebox{\L@tbox}%
+  \ifnum\@listdepth>0 \Lreset@listparshape \fi
 }
 %    \end{macrocode}
 % \iffalse
