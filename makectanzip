@@ -11,7 +11,7 @@ mkdir bidi
 mv *.sty *.cls *.def  bidi.tex tex/xelatex/bidi
 # not currently built/cropped from bidi-logo.tex
 cp bidi-logo.pdf bibitem.pdf doc/xelatex/bidi
-mv bidi.pdf  *.tex README  doc/xelatex/bidi
+mv bidi.pdf  bidi-doc.pdf *.tex README  doc/xelatex/bidi
 cp *.jpg  doc/xelatex/bidi
 mv bidi.ins source/xelatex/bidi
 cp *.ltx bidi.dtx source/xelatex/bidi
