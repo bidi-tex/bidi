@@ -8,9 +8,13 @@ xelatex -shell-escape bidi-doc.ltx
 xelatex -shell-escape bidi-doc.ltx
 mkdir -p doc/xelatex/bidi source/xelatex/bidi tex/xelatex/bidi 
 mkdir bidi
-mv *.sty *.cls *.def  bidi.tex bibitem.pdf bidi-logo.pdf tex/xelatex/bidi
-mv *.pdf *.jpg *.tex README  doc/xelatex/bidi
-mv *.ltx bidi.dtx bidi.ins source/xelatex/bidi
+mv *.sty *.cls *.def  bidi.tex tex/xelatex/bidi
+# not currently built/cropped from bidi-logo.tex
+cp bidi-logo.pdf bibitem.pdf doc/xelatex/bidi
+mv bidi.pdf  *.tex README  doc/xelatex/bidi
+cp *.jpg  doc/xelatex/bidi
+mv bidi.ins source/xelatex/bidi
+cp *.ltx bidi.dtx source/xelatex/bidi
 zip -r bidi-tds doc/xelatex/bidi source/xelatex/bidi tex/xelatex/bidi 
 mv bidi-tds.zip bidi.tds.zip
 mv doc/xelatex/bidi/*.pdf doc/xelatex/bidi/*.jpg doc/xelatex/bidi/README source/xelatex/bidi/*.ltx source/xelatex/bidi/bidi.dtx tex/xelatex/bidi/bibitem.pdf bidi
