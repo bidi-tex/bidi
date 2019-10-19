@@ -5,7 +5,7 @@
 %<*readme>
 ___________________
 The bidi package
-v35.9
+v35.10
 
 This package provides a convenient interface for typesetting
 bidirectional texts in Plain TeX and LaTeX, using XeTeX engine.
@@ -21,7 +21,7 @@ In doing so, please always explain your issue well enough,
 and always include a minimal working example showing the 
 issue.
   
-Current version release date: 2019/06/14
+Current version release date: 2019/10/19
 
 ___________________
 Vafa Khalighi
@@ -218,7 +218,7 @@ by Vafa Khalighi.
 \documentclass{ltxdoc}
 \input{bidi-doc-preamble.ltx}
 \hypersetup{%
-  pdftitle={Source documentation for version 35.9 of the bidi
+  pdftitle={Source documentation for version 35.10 of the bidi
                 package}%
 }
 \EnableCrossrefs
@@ -237,7 +237,7 @@ by Vafa Khalighi.
 % \GetFileInfo{\jobname.dtx}
 % \title{\textcolor{blue!65!black}{\Huge The \textsf{bidi} \textit{Package}}\\
 %\LARGE Bidirectional typesetting in plain \TeX{} and \LaTeX, using \XeTeX{} engine\\[5pt]
-%\large Source documentation for \textcolor{blue!65!black}{version 35.9}}
+%\large Source documentation for \textcolor{blue!65!black}{version 35.10}}
 % \author{Vafa Khalighi}
 %\setcounter{page}{0}
 %\thispagestyle{empty}
@@ -247,7 +247,7 @@ by Vafa Khalighi.
 %\textcolor{blue!65!black}{\Huge The \textsf{bidi} \textit{Package}}
 %
 %\Large
-%Source documentation for \textcolor{blue!65!black}{version 35.9}}
+%Source documentation for \textcolor{blue!65!black}{version 35.10}}
 %
 %\vskip 0pt plus 3fill
 %\textit{\large to my Master, \textbf{Ferdowsi The Great}}
@@ -282,7 +282,6 @@ by Vafa Khalighi.
 %\iffalse
 %<*table>
 %\fi
-%% \CheckSum{50082}
 %% \CharacterTable
 %%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
 %%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
@@ -1895,8 +1894,8 @@ by Vafa Khalighi.
 % \section{File \texttt{bidi.sty}}
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
-\def\bididate{2019/06/14}
-\def\bidi@version{35.9}
+\def\bididate{2019/10/19}
+\def\bidi@version{35.10}
 \ProvidesPackage{bidi}[\bididate\space v\bidi@version\space
 Bidirectional typesetting in plain TeX and LaTeX]
 \edef\@bidi@info{****************************************************^^J%
@@ -2221,9 +2220,9 @@ Bidirectional typesetting in plain TeX and LaTeX]
 %\fi
 % \section{File \texttt{bidi.tex}}
 %    \begin{macrocode}
-\def\bididate{2019/06/14}
+\def\bididate{2019/10/19}
 \catcode`@=11
-\def\bidi@version{35.9}
+\def\bidi@version{35.10}
 \let \protect \relax
 \newlinechar`\^^J
 \edef\@bidi@info{****************************************************^^J%
@@ -3081,7 +3080,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
 % \section{File \texttt{biditools.sty}}
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{biditools}[2018/12/11 v1.9 Programming tools for bidi package]
+\ProvidesPackage{biditools}[2019/10/19 v1.10 Programming tools for bidi package]
 \providecommand{\@bidi@saveprimitive}[2]{\begingroup\escapechar`\\\relax
   \edef\@tempa{\string#1}\edef\@tempb{\meaning#1}%
   \ifx\@tempa\@tempb \global\let#2#1%
@@ -3807,7 +3806,10 @@ ill-advised in the old versions of bidi package.%
 \bidi@newrobustcmd{\bidi@AtBeginEnvironment}[1]{%
   \bidi@csgappto{@bidi@begin@#1@hook}}
 
-\bidi@patchcmd\begin
+% Patch \begin<space> and \end<space> in newer LaTeX releases
+% \begin and \end in older ones.
+
+\expandafter\bidi@patchcmd\csname begin\ifcsname begin \endcsname\space\fi\endcsname
   {\csname #1\endcsname}
   {\bidi@csuse{@bidi@begin@#1@hook}%
    \csname #1\endcsname}
@@ -3821,7 +3823,7 @@ ill-advised in the old versions of bidi package.%
 \bidi@newrobustcmd{\bidi@AtEndEnvironment}[1]{%
   \bidi@csgappto{@bidi@end@#1@hook}}
 
-\bidi@patchcmd\end
+\expandafter\bidi@patchcmd\csname end\ifcsname end \endcsname\space\fi\endcsname
   {\csname end#1\endcsname}
   {\bidi@csuse{@bidi@end@#1@hook}%
    \csname end#1\endcsname}
@@ -3835,7 +3837,7 @@ ill-advised in the old versions of bidi package.%
 \bidi@newrobustcmd{\bidi@BeforeBeginEnvironment}[1]{%
   \bidi@csgappto{@bidi@beforebegin@#1@hook}}
 
-\bidi@pretocmd\begin
+\expandafter\bidi@pretocmd\csname begin\ifcsname begin \endcsname\space\fi\endcsname
   {\bidi@csuse{@bidi@beforebegin@#1@hook}}
   {}
   {\bidi@warning{%
@@ -3847,7 +3849,7 @@ ill-advised in the old versions of bidi package.%
 \bidi@newrobustcmd{\bidi@AfterEndEnvironment}[1]{%
   \bidi@csgappto{@bidi@afterend@#1@hook}}
 
-\bidi@patchcmd\end
+\expandafter\bidi@patchcmd\csname end\ifcsname end \endcsname\space\fi\endcsname
   {\if@ignore}
   {\bidi@csuse{@bidi@afterend@#1@hook}%
    \if@ignore}
@@ -15717,7 +15719,7 @@ bidi implementation of tufte title]
 %\fi
 % \section{File \texttt{multicol-xetex-bidi.def}}
 %    \begin{macrocode}
-\ProvidesFile{multicol-xetex-bidi.def}[2019/06/14 v1.2 bidi adaptations for multicol package for XeTeX engine]
+\ProvidesFile{multicol-xetex-bidi.def}[2019/10/19 v1.2 bidi adaptations for multicol package for XeTeX engine]
 \def\page@sofar{%
    \process@cols\mult@rightbox
        {\ifvoid\count@
