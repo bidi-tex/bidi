@@ -1,4 +1,4 @@
-% \iffalse 
+% \iffalse
 %<*internal>
 \iffalse
 %</internal>
@@ -16,11 +16,11 @@ improvements, or ask any questions about the package, then
 please use the issue tracker:
 
   <https://github.com/vafa-ac/bidi/issues>
-  
-In doing so, please always explain your issue well enough, 
-and always include a minimal working example showing the 
+
+In doing so, please always explain your issue well enough,
+and always include a minimal working example showing the
 issue.
-  
+
 Current version release date: 2019/10/19
 
 ___________________
@@ -31,7 +31,7 @@ It may be distributed and/or modified under the LaTeX Project Public License,
 version 1.3c or higher (your choice). The latest version of
 this license is at: http://www.latex-project.org/lppl.txt
 
-This work is “author-maintained” (as per LPPL maintenance status) 
+This work is “author-maintained” (as per LPPL maintenance status)
 by Vafa Khalighi.
 %</readme>
 %<*internal>
@@ -44,13 +44,13 @@ by Vafa Khalighi.
 \preamble
 
   __________________________________________________
-  Copyright (c) 2009--2019  Vafa Khalighi 
+  Copyright (c) 2009--2019  Vafa Khalighi
 
   It may be distributed and/or modified under the LaTeX Project Public License,
   version 1.3c or higher (your choice). The latest version of
   this license is at: http://www.latex-project.org/lppl.txt
 
-  This work is “author-maintained” (as per LPPL maintenance status) 
+  This work is “author-maintained” (as per LPPL maintenance status)
   by Vafa Khalighi.
 
 
@@ -262,7 +262,7 @@ by Vafa Khalighi.
 %
 %\medskip
 %In doing so, please always explain your issue well enough, and always include
-%a minimal working example showing the issue. 
+%a minimal working example showing the issue.
 %\end{minipage}
 %}}
 %
@@ -334,10 +334,10 @@ by Vafa Khalighi.
 \def\right@footnoterule{%
   \kern-.4\p@
   \hbox to \columnwidth{\hskip \dimexpr\columnwidth-5pc\relax \hrulefill }
-  \kern11\p@\kern-\footnotesep}  
+  \kern11\p@\kern-\footnotesep}
 \def\left@footnoterule{\kern-.4\p@
         \hrule\@width 5pc\kern11\p@\kern-\footnotesep}
-        
+
 
 \long\def\@footnotetext#1{%
   \insert\footins{%
@@ -352,7 +352,7 @@ by Vafa Khalighi.
       \csname p@footnote\endcsname\@thefnmark}%
     \@makefntext{%
       \rule\z@\footnotesep\ignorespaces#1\unskip\strut\par}}}
-      
+
 \long\def\@RTLfootnotetext#1{%
   \insert\footins{%
     \@RTLtrue%
@@ -365,10 +365,10 @@ by Vafa Khalighi.
     \protected@edef\@currentlabel{%
       \csname p@footnote\endcsname\@thefnmark}%
     \@makefntext{%
-      \rule\z@\footnotesep\ignorespaces#1\unskip\strut\par}}}     
-      
-      
-      
+      \rule\z@\footnotesep\ignorespaces#1\unskip\strut\par}}}
+
+
+
 \long\def\@LTRfootnotetext#1{%
   \insert\footins{%
     \@RTLfalse%
@@ -381,13 +381,13 @@ by Vafa Khalighi.
     \protected@edef\@currentlabel{%
       \csname p@footnote\endcsname\@thefnmark}%
     \@makefntext{%
-      \rule\z@\footnotesep\ignorespaces#1\unskip\strut\par}}}    
-      
-      
-\footdir@temp\footdir@ORG@bidi@amsart@footnotetext\@footnotetext{\bidi@footdir@footnote}%    
+      \rule\z@\footnotesep\ignorespaces#1\unskip\strut\par}}}
+
+
+\footdir@temp\footdir@ORG@bidi@amsart@footnotetext\@footnotetext{\bidi@footdir@footnote}%
 \footdir@temp\footdir@ORG@bidi@amsart@RTLfootnotetext\@RTLfootnotetext{R}%
 \footdir@temp\footdir@ORG@bidi@amsart@LTRfootnotetext\@LTRfootnotetext{L}%
-      
+
 \renewenvironment{thebibliography}[1]{%
   \@bibtitlestyle
   \normalfont\bibliofont\labelsep .5em\relax
@@ -562,7 +562,7 @@ by Vafa Khalighi.
 \def\right@footnoterule{%
   \kern-.4\p@
   \hbox to \columnwidth{\hskip \dimexpr\columnwidth-5pc\relax \hrulefill }
-  \kern11\p@\kern-\footnotesep}  
+  \kern11\p@\kern-\footnotesep}
 \def\left@footnoterule{\kern-.4\p@
         \hrule\@width 5pc\kern11\p@\kern-\footnotesep}
 
@@ -611,7 +611,7 @@ by Vafa Khalighi.
 
 
 
-\footdir@temp\footdir@ORG@bidi@amsbook@footnotetext\@footnotetext{\bidi@footdir@footnote}%    
+\footdir@temp\footdir@ORG@bidi@amsbook@footnotetext\@footnotetext{\bidi@footdir@footnote}%
 \footdir@temp\footdir@ORG@bidi@amsbook@RTLfootnotetext\@RTLfootnotetext{R}%
 \footdir@temp\footdir@ORG@bidi@amsbook@LTRfootnotetext\@LTRfootnotetext{L}%
 
@@ -1900,11 +1900,11 @@ by Vafa Khalighi.
 Bidirectional typesetting in plain TeX and LaTeX]
 \edef\@bidi@info{****************************************************^^J%
 * ^^J%
-* bidi package (Bidirectional typesetting in^^J% 
+* bidi package (Bidirectional typesetting in^^J%
 * plain TeX and LaTeX, using XeTeX engine)^^J%
 * ^^J%
-* Description: A convenient interface for^^J% 
-* typesetting bidirectional texts in plain TeX^^J% 
+* Description: A convenient interface for^^J%
+* typesetting bidirectional texts in plain TeX^^J%
 * and LaTeX.  The package includes adaptations^^J%
 * for use with many other commonly-used packages.^^J%
 * ^^J%
@@ -1978,7 +1978,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
 }
 \newcommand*{\@bidi@pdfcustomproperties}{%
   This is the bidi package, Version \bidi@version,
-  Released June 14, 2019. 
+  Released June 14, 2019.
 }
 \@RTLmainfalse
 \AtBeginDocument{%
@@ -2006,13 +2006,13 @@ Bidirectional typesetting in plain TeX and LaTeX]
       \hboxR to \columnwidth
     \else
       \hboxR to \textwidth
-    \fi    
+    \fi
   \else
     \if@twocolumn
       \hboxL to \columnwidth
     \else
       \hboxL to \textwidth
-    \fi 
+    \fi
   \fi
 }
 \newcommand*{\@bidi@logo}[1]{%
@@ -2033,7 +2033,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
 }
 \newcommand*{\@bidi@logo@}{%
   \@bidi@logo@hb@xt@columnwidth
-    {\hss\LRE{\bfseries Typeset by the \textsf{bidi} 
+    {\hss\LRE{\bfseries Typeset by the \textsf{bidi}
     package\quad\@bidi@logo{bidi-logo.pdf}}}}
 \define@key{bidi@pdfencrypt}{userpassword}[]{%
   \def\bidi@pdfencrypt@userpassword{#1}%
@@ -2111,7 +2111,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
   \or
     \@extrafootnotefeaturesfalse
   \fi}
-  
+
 \define@choicekey{bidi.sty}{DetectColumn}[\bidi@tempa\bidi@tempb]{on,off}[on]{%
   \ifcase\bidi@tempb\relax
   \def\bidi@firstcolumn@status@write{%
@@ -2125,31 +2125,31 @@ Bidirectional typesetting in plain TeX and LaTeX]
     \let\bidi@firstcolumn@status@write\relax
     \let\bidi@lastcolumn@status@write\relax
   \fi}
-  
+
 \define@choicekey{bidi.sty}{logo}[\bidi@tempa\bidi@tempb]{on,off}[on]{%
   \ifcase\bidi@tempb\relax
     \AtBeginDocument{\@bidi@inslogo@}%
   \or
     \let\@bidi@logo@\@empty \let\@bidi@inslogo@\@empty
   \fi}
-  
+
 \define@choicekey{bidi.sty}{pdfinfo}[\bidi@tempa\bidi@tempb]{on,off}[on]{%
   \ifcase\bidi@tempb\relax
     \@bidi@pdfm@marktrue
   \or
     \@bidi@pdfm@markfalse
   \fi}
-  
-% The `perpagefootnote' option is documented in UK TeX FAQ at 
+
+% The `perpagefootnote' option is documented in UK TeX FAQ at
 %  <https://texfaq.org/FAQ-footnpp> (see last paragraph)
-  
+
 \define@choicekey{bidi.sty}{perpagefootnote}[\bidi@tempa\bidi@tempb]{on,off}[on]{%
   \ifcase\bidi@tempb\relax
     \@bidi@perpage@footnotetrue
   \or
     \@bidi@perpage@footnotefalse
   \fi}
-  
+
 \ExecuteOptionsX{%
     DetectColumn=off%
 }
@@ -2188,7 +2188,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
       \@bidi@pdfencrypttrue
     \fi
   \else
-    \@bidi@pdfencrypttrue 
+    \@bidi@pdfencrypttrue
   \fi
   \if@bidi@pdfencrypt
     \special{pdf:encrypt
@@ -2227,11 +2227,11 @@ Bidirectional typesetting in plain TeX and LaTeX]
 \newlinechar`\^^J
 \edef\@bidi@info{****************************************************^^J%
 * ^^J%
-* bidi package (Bidirectional typesetting in^^J% 
+* bidi package (Bidirectional typesetting in^^J%
 * plain TeX and LaTeX, using XeTeX engine)^^J%
 * ^^J%
-* Description: A convenient interface for^^J% 
-* typesetting bidirectional texts in plain TeX^^J% 
+* Description: A convenient interface for^^J%
+* typesetting bidirectional texts in plain TeX^^J%
 * and LaTeX.  The package includes adaptations^^J%
 * for use with many other commonly-used packages.^^J%
 * ^^J%
@@ -2319,7 +2319,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
 }
 \def\@bidi@pdfcustomproperties{%
   This is the bidi package, Version \bidi@version,
-  Released June 14, 2019. 
+  Released June 14, 2019.
 }
 \def\bidi@pdfm@mark{%
   \special{pdf:%
@@ -2421,17 +2421,17 @@ Bidirectional typesetting in plain TeX and LaTeX]
 \lstset{
     language=[LaTeX]TEX,
     float=hbp,
-    basicstyle=\ttfamily\small, 
-    identifierstyle=\color{colIdentifier}, 
-    keywordstyle=\color{colKeys}, 
-    stringstyle=\color{colString}, 
-    commentstyle=\color{colComments}, 
+    basicstyle=\ttfamily\small,
+    identifierstyle=\color{colIdentifier},
+    keywordstyle=\color{colKeys},
+    stringstyle=\color{colString},
+    commentstyle=\color{colComments},
     backgroundcolor=\color{hellgelb},
-    columns=flexible, 
-    tabsize=4, 
-    extendedchars=true, 
-    showspaces=false, 
-    showstringspaces=false, 
+    columns=flexible,
+    tabsize=4,
+    extendedchars=true,
+    showspaces=false,
+    showstringspaces=false,
     numbers=left,
     numbersep=0.9em,
     numberstyle=\tiny, %
@@ -2624,26 +2624,26 @@ Bidirectional typesetting in plain TeX and LaTeX]
 \long\def\bidi@p@RTLftntext#1{%
   \edef\@tempyii{\the\bidi@p@ftn\noexpand\RTLfootnotetext[\the\csname c@\@mpfn\endcsname]}%
   \global\bidi@p@ftn\expandafter{\@tempyii{#1}}}%
-  
+
 
 \long\def\bidi@p@xftntext[#1]#2{%
   \global\bidi@p@ftn\expandafter{\the\bidi@p@ftn\footnotetext[#1]{#2}}}
-  
+
 \long\def\bidi@p@xLTRftntext[#1]#2{%
   \global\bidi@p@ftn\expandafter{\the\bidi@p@ftn\LTRfootnotetext[#1]{#2}}}
-  
+
 \long\def\bidi@p@xRTLftntext[#1]#2{%
   \global\bidi@p@ftn\expandafter{\the\bidi@p@ftn\RTLfootnotetext[#1]{#2}}}
-  
-  
+
+
 \def\bidi@p@xfootnote[#1]{%
    \begingroup
      \csname c@\@mpfn\endcsname #1\relax
      \unrestored@protected@xdef\@thefnmark{\thempfn}%
    \endgroup
    \@footnotemark\bidi@p@xftntext[#1]}
-   
-   
+
+
 \def\bidi@p@xLTRfootnote[#1]{%
    \begingroup
      \csname c@\@mpfn\endcsname #1\relax
@@ -3006,7 +3006,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{bidi-perpage}[2018/10/04 v0.4 Reset counter(s) on every page]
-\newcount\bidi@page@count 
+\newcount\bidi@page@count
 \bidi@page@count\@ne
 \newcommand*{\ResetCounterPerPage}[2][\z@]{%
   \if@bidi@csundef{bidi@stepcounterhook@@#2}{%
@@ -3023,7 +3023,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
     \expandafter\newcount\csname
     bidi@previous@page@@#2@count\endcsname
   }{}%
-  \csname bidi@previous@page@@#2@count\endcsname\z@  
+  \csname bidi@previous@page@@#2@count\endcsname\z@
   \if@bidi@csundef{bidi@reset@#2@perpage}{%
     \bidi@AfterEndDocumentCheckLabelsRerun{%
       \csname if@bidi@reset@#2@rerun\endcsname
@@ -3063,12 +3063,12 @@ Bidirectional typesetting in plain TeX and LaTeX]
     \fi
   \fi
   }%
-  \expandafter\bidi@gappto\csname 
+  \expandafter\bidi@gappto\csname
   bidi@stepcounterhook@@#2\endcsname{%
     \csname bidi@reset@#2@perpage\endcsname
   }%
 }
-\def\bidi@counter@page#1#2#3{\bidi@namegdef{bidi@#1@@#2}{#3}}    
+\def\bidi@counter@page#1#2#3{\bidi@namegdef{bidi@#1@@#2}{#3}}
 \bidi@AtEndOutputPage{%
   \global\advance\bidi@page@count\@ne
 }
@@ -3240,7 +3240,7 @@ ill-advised in the old versions of bidi package.%
     \expandafter\@secondoftwo
   \else
     \expandafter\@firstoftwo
-  \fi}  
+  \fi}
 \newcommand*{\ifRtoLtable}{%
   \if@RTLtab
     \expandafter\@firstoftwo
@@ -3252,7 +3252,7 @@ ill-advised in the old versions of bidi package.%
     \expandafter\@secondoftwo
   \else
     \expandafter\@firstoftwo
-  \fi}  
+  \fi}
 \newcommand*{\ifRtoLhboxconstruct}{%
   \if@hboxRconstruct
     \expandafter\@firstoftwo
@@ -3264,26 +3264,26 @@ ill-advised in the old versions of bidi package.%
     \expandafter\@secondoftwo
   \else
     \expandafter\@firstoftwo
-  \fi} 
+  \fi}
 \newcommand*{\iflatin}{%
   \if@nonlatin
     \expandafter\@secondoftwo
   \else
     \expandafter\@firstoftwo
-  \fi} 
+  \fi}
 \newcommand*{\ifnonlatin}{%
   \if@nonlatin
     \expandafter\@firstoftwo
   \else
     \expandafter\@secondoftwo
   \fi}
-  
+
 \newcommand*{\bidi@@convert@dimen@t@unit}[2]{%
     \strip@pt\dimexpr #1*65536/\dimexpr 1#2\relax #2}
-  
+
 \newcommand*{\bidi@@convert@dimen@t@pt}[1]{%
     \dimexpr #1*65536/\dimexpr 1pt\relax}
-  
+
 \newcommand*{\if@bidi@csdef}[1]{%
   \ifcsname#1\endcsname
     \expandafter\@firstoftwo
@@ -3759,7 +3759,7 @@ ill-advised in the old versions of bidi package.%
   \protected\def\bidi@AfterEndPreamble{\@notprerr\@gobble}%
   \bidi@undef\bidi@afterendpreamblehook
   \ignorespaces}
-  
+
 \bidi@newrobustcmd*{\bidi@AfterEndDocumentCheckLabelsRerun}{\bidi@gappto\bidi@afterenddocumentchecklabelsrerunhook}
 \newcommand*{\bidi@afterenddocumentchecklabelsrerunhook}{}
 
@@ -3858,9 +3858,9 @@ ill-advised in the old versions of bidi package.%
      Patching '\string\end' failed!\MessageBreak
      '\string\bidi@AfterEndEnvironment' will not work\@gobble}}
 
-\def\bidi@namedef#1{\expandafter\def\csname #1\endcsname} 
-\def\bidi@namegdef#1{\expandafter\gdef\csname #1\endcsname} 
-\def\bidi@nameedef#1{\expandafter\edef\csname #1\endcsname}   
+\def\bidi@namedef#1{\expandafter\def\csname #1\endcsname}
+\def\bidi@namegdef#1{\expandafter\gdef\csname #1\endcsname}
+\def\bidi@nameedef#1{\expandafter\edef\csname #1\endcsname}
 \def\bidi@namexdef#1{\expandafter\xdef\csname #1\endcsname}
 
 % From David Carlisle:
@@ -3880,7 +3880,7 @@ ill-advised in the old versions of bidi package.%
   \fi
   \@bidi@@stpelt{#1}%
 }
-  
+
 \bidi@pretocmd\stepcounter
   {%
     \if@bidi@csundef{bidi@stepcounterhook@@#1}{}{%
@@ -3888,7 +3888,7 @@ ill-advised in the old versions of bidi package.%
     }%
   }{}%
   {\PackageWarning{biditools}{Patching `\string\stepcounter' failed}}
-     
+
 \chardef\bidi@backslash`\\
 \def\bidics#1{\texttt{\char\bidi@backslash#1}}
 
@@ -3896,7 +3896,7 @@ ill-advised in the old versions of bidi package.%
 \newcount\bidi@tempcountb
 \newtoks\bidi@temptoksa
 \newtoks\bidi@temptoksb
-     
+
 % Catcode (re)storing
 %
 \def\bidi@storecatcode#1%
@@ -3910,7 +3910,7 @@ ill-advised in the old versions of bidi package.%
    {\escapechar\m@ne
     \csname bidi@restorecatcode\string#1\endcsname
     \escapechar`\\\relax}
-    
+
 % Construct a control sequence inside \edef
 %
 \def\bidi@csname#1{\expandafter\noexpand\csname#1\endcsname}
@@ -3985,13 +3985,13 @@ ill-advised in the old versions of bidi package.%
 \def\bidi@ifNextChar#1#2#3{%
     \let\bidi@nxt@ch#1\def\bidi@nxt@a{#2}\def\bidi@nxt@b{#3}%
     \futurelet\bidi@nxt@c\@bidi@ifnxtc}
-\def\@bidi@ifnxtc{\ifx\bidi@nxt@ch\bidi@nxt@c \expandafter\bidi@nxt@a 
+\def\@bidi@ifnxtc{\ifx\bidi@nxt@ch\bidi@nxt@c \expandafter\bidi@nxt@a
     \else \expandafter\bidi@nxt@b \fi}
-    
+
 % Test for defined-ness of string as control sequence.
 % works inside \edef
 %
-\def\bidi@undefinedcs#1{00\fi\bidi@csarg\ifx{#1}\relax}    
+\def\bidi@undefinedcs#1{00\fi\bidi@csarg\ifx{#1}\relax}
 
 % Define uniquely defined dummy macros,
 % usually to serve as bumper blocks at the end of a list
@@ -4003,7 +4003,7 @@ ill-advised in the old versions of bidi package.%
     \else
         \bidi@error{Attempt at second definition of `#1'}
     \fi}
-    
+
 % string case statement
 % use: \bidi@switch \iftest{...} in:
 %      item1 action1
@@ -4047,7 +4047,7 @@ ill-advised in the old versions of bidi package.%
   \bidi@fswitch #1 in:
 }
 
-% Routines for taking the value of a string: 
+% Routines for taking the value of a string:
 % if the string is defined as control sequence
 % take the value of that, otherwise take the string itself
 
@@ -4063,15 +4063,15 @@ ill-advised in the old versions of bidi package.%
 % for use in \edef
 %
 \newif\ifbidi@in@label
-\def\@bidi@w@w#1{\if\bidi@undefinedcs{#1}#1\else 
+\def\@bidi@w@w#1{\if\bidi@undefinedcs{#1}#1\else
             \ifbidi@in@label\noexpand\protect\fi \bidi@csname{#1}\fi}
 \newtoks\bidi@are@these@correct
 \def\bidi@t@w@w#1{%
     \if\bidi@undefinedcs{#1}#1%
         \ifdefining\bidi@append@to@list\bidi@are@these@correct{#1 }\fi
-    \else 
+    \else
         \ifin@label\noexpand\protect\fi \bidi@csname{#1}\fi}
-        
+
 % List Manipulation ................
 % this assumes that #1 is a list of tokens, #2 is the name of a list
 %
@@ -4127,21 +4127,21 @@ ill-advised in the old versions of bidi package.%
   \endgroup}
 \long\def\bidi@local@in@front@of@list#1#2{\bidi@toks@lista={#2}%
     \csname#1\endcsname\expandafter\expandafter\expandafter\expandafter\expandafter\expandafter\expandafter
-                {\expandafter\expandafter\expandafter\the\expandafter\expandafter\expandafter\bidi@toks@lista 
+                {\expandafter\expandafter\expandafter\the\expandafter\expandafter\expandafter\bidi@toks@lista
                  \expandafter\the\csname#1\endcsname}%
     }
 \def\bidi@set@list#1{\bidi@csarg{\let\expandafter\bidi@cs@lista}{#1}%
   \bidi@set@cslist\bidi@cs@lista}
 \long\def\bidi@set@cslist#1#2{\begingroup\bidi@toks@lista={#2}%
    \global#1=\expandafter{\the\bidi@toks@lista}\endgroup}
-   
+
 %%%%%%%%%%%%%%%% Stack macros
 %
 % push in terms of prepending of lists
 \def\bidi@push@cs@onto@cs#1#2{\@bidi@prepend@to@cslist#1\expandafter{\expandafter\\\expandafter{\the#2}}}
 \def\bidi@push@onto#1{\bidi@csarg\bidi@push@onto@cs{#1}}
 \def\bidi@push@onto@cs#1#2{\@bidi@prepend@to@cslist#1{}{\\{#2}}}
-\def\bidi@local@push@onto#1#2{\let\\=\relax 
+\def\bidi@local@push@onto#1#2{\let\\=\relax
     \bidi@local@in@front@of@list{#1}{\\{#2}}}
 % pop via auxiliary macro: #1 is result, #2 is stack
 % two cs arguments
@@ -4176,7 +4176,7 @@ ill-advised in the old versions of bidi package.%
   \loop\ifnum\bidi@tempcountb<\bidi@stack@length
     \bidi@pop@into{bidi@temptoksb}{#1}\advance\bidi@stack@length\m@ne
     \bidi@append@list@to@list{bidi@temptoksb}{bidi@temptoksa}\repeat
-  \csname#1\endcsname\bidi@temptoksa \bidi@temptoksa\bidi@empty@toks}   
+  \csname#1\endcsname\bidi@temptoksa \bidi@temptoksa\bidi@empty@toks}
 
 
 % General loop macro:
@@ -4239,7 +4239,7 @@ ill-advised in the old versions of bidi package.%
   \edef\bidi@looprepeat@tmp
      {\def\bidi@looprepeat@csargromannumeral\noexpand{bidi@looprepeat@looprepeat}{\bidi@looprepeat@csargromannumeral\noexpand{bidi@looprepeat@body}}}\bidi@looprepeat@tmp
   \afterassignment\bidi@looprepeat@dxbody\bidi@looprepeat@csromannumeral{bidi@looprepeat@toks}}
-  
+
 % Define and execute loop body
 % This is done with an \edef to construct the actual sequence
 \def\bidi@looprepeat@dxbody{\bidi@looprepeat@csargromannumeral\edef{bidi@looprepeat@body}{%
@@ -4250,14 +4250,14 @@ ill-advised in the old versions of bidi package.%
     \noexpand\endlooprepeat
     \bidi@looprepeat@csargromannumeral\noexpand{bidi@looprepeat@looprepeat}}%
   \bidi@looprepeat@csromannumeral{bidi@looprepeat@body}\ignorespaces}
-  
+
 % Stop test
 %% In order to stop, issue a
 % \breaklooprepeat which scoops up the rest of the body and exits
 \def\breaklooprepeat#1\endlooprepeat{\bidi@looprepeat@zero\bidi@looprepeat@csargromannumeral\let{bidi@looprepeat@looprepeat}\relax
   \advance\bidi@looprepeat@depth\m@ne \bidi@looprepeat@traceexit
   }
-  
+
 
 % Setup
 % gather bounds and termination conditions
@@ -4272,7 +4272,7 @@ ill-advised in the old versions of bidi package.%
       \edef\bidi@looprepeat@tmp{\global\bidi@looprepeat@csargromannumeral\noexpand{bidi@looprepeat@wtest}=
        {\bidi@looprepeat@csargromannumeral\the{bidi@looprepeat@wtest}%
         \noexpand\ifnum\bidi@looprepeat@csargromannumeral\noexpand{bidi@looprepeat@count}\bidi@looprepeat@comp##1\relax
-          \noexpand\expandafter \noexpand\breaklooprepeat 
+          \noexpand\expandafter \noexpand\breaklooprepeat
         \noexpand\fi}\ignorespaces}%
       \bidi@looprepeat@tmp}%
     \def\downtovalue##1{%
@@ -4294,7 +4294,7 @@ ill-advised in the old versions of bidi package.%
   \endgroup}
 \def\bidi@looprepeat@zero
    {\bidi@looprepeat@csromannumeral{bidi@looprepeat@toks}{}\bidi@looprepeat@csromannumeral{bidi@looprepeat@utest}{}\bidi@looprepeat@csromannumeral{bidi@looprepeat@wtest}{}%
-    \bidi@looprepeat@csargromannumeral\def{bidi@looprepeat@body}{}}     
+    \bidi@looprepeat@csargromannumeral\def{bidi@looprepeat@body}{}}
 
 %\tracingmacros2
 %\newcount\tmpcount % used in some examples below
@@ -4327,13 +4327,13 @@ ill-advised in the old versions of bidi package.%
 %  \doloopbody {\number\j{} }
 
 %\looprepeat \forvariable{i} \bystep{2} \tovalue{10} \doloopbody
-% {\looprepeat \forvariable{j} \fromvalue{\i} \bystep{3} \tovalue{18} 
+% {\looprepeat \forvariable{j} \fromvalue{\i} \bystep{3} \tovalue{18}
 %  \doloopbody {(\number\i.\number\j) }
 % }
 
 % infinite loop
 %\looprepeat \doloopbody {}
-    
+
 \renewcommand{\InputIfFileExists}[2]{%
   \begingroup\expandafter\expandafter\expandafter\endgroup
   \expandafter\ifx\csname #1-@bidi@alias\endcsname\relax
@@ -4850,7 +4850,7 @@ ill-advised in the old versions of bidi package.%
   \let\@ifpackagelater\bidi@patch@OrgIfPackageLater
   \let\@ifclassloaded\bidi@patch@OrgIfClassLoaded
   \let\@ifclasslater\bidi@patch@OrgIfClassLater
-}%        
+}%
 %    \end{macrocode}
 % \iffalse
 %</biditools.sty>
@@ -5620,7 +5620,7 @@ bidi implementation of tufte sidenote]
   % Use grouping to emulate a multi-token afterassignment queue
   \begingroup%
   % Put `\toks 0 {' into the afterassignment queue
-  \aftergroup\toks\aftergroup0\aftergroup{% 
+  \aftergroup\toks\aftergroup0\aftergroup{%
   % Apply \trimb to the replacement text of #1, adding a leading
   % \noexpand to prevent brace stripping and to serve another purpose
   % later.
@@ -6033,20 +6033,20 @@ bidi implementation of tufte toc]
 % See Bringhurst's _The Elements of Typography_, section 4.2.2.
 \renewcommand\subsubsection{%
   \bidituftetocError{\noexpand\subsubsection is undefined by this class.%
-    \MessageBreak See Robert Bringhurst's _The Elements of 
+    \MessageBreak See Robert Bringhurst's _The Elements of
     \MessageBreak Typographic Style_, section 4.2.2.
     \MessageBreak \noexpand\subsubsection was used}
-    {From Bringhurst's _The Elements of Typographic Style_, section 4.2.2: Use as 
-    \MessageBreak many levels of headings as you need, no more and no fewer.  Also see the many 
+    {From Bringhurst's _The Elements of Typographic Style_, section 4.2.2: Use as
+    \MessageBreak many levels of headings as you need, no more and no fewer.  Also see the many
     \MessageBreak related threads on Ask E.T. at http://www.edwardbidituftetoc.com/.}
 }
 \renewcommand\subparagraph{%
   \bidituftetocError{\noexpand\subparagraph is undefined by this class.%
-    \MessageBreak See Robert Bringhurst's _The Elements of 
+    \MessageBreak See Robert Bringhurst's _The Elements of
     \MessageBreak Typographic Style_, section 4.2.2.
     \MessageBreak \noexpand\subparagraph was used}
-    {From Bringhurst's _The Elements of Typographic Style_, section 4.2.2: Use as 
-    \MessageBreak many levels of headings as you need, no more and no fewer.  Also see the many 
+    {From Bringhurst's _The Elements of Typographic Style_, section 4.2.2: Use as
+    \MessageBreak many levels of headings as you need, no more and no fewer.  Also see the many
     \MessageBreak related threads on Ask E.T. at http://www.edwardbidituftetoc.com/.}
 }
 % Formatting for main TOC (printed in front matter)
@@ -6261,7 +6261,7 @@ bidi implementation of tufte general structure]
 bidi implementation of tufte hyperref]
 %%
 % Color
-\RequirePackage[usenames,dvipsnames,svgnames]{xcolor}% 
+\RequirePackage[usenames,dvipsnames,svgnames]{xcolor}%
 \newboolean{@bidituftehyperref@loadhyper}
 \setboolean{@bidituftehyperref@loadhyper}{true}
 \DeclareOption{hyper}{\setboolean{@bidituftehyperref@loadhyper}{true}}
@@ -6555,7 +6555,7 @@ bidi implementation of tufte title]
 
 % Usage:
 %
-% \Setversedim #1#2 		% define the layout (within a group): 
+% \Setversedim #1#2 		% define the layout (within a group):
 % #1 = length of both half-verses
 % #2 = separation distance = length of a connection, if present
 % 	Variant:
@@ -6586,8 +6586,8 @@ bidi implementation of tufte title]
 \newdimen \bidipoem@hvind	\newdimen \bidipoem@@hvlen
 
 \newcommand*{\Setversedim}[2]{% set lengths of half-verse, [separation]
-\bidipoem@hvind \textwidth 
-\bidipoem@hvlen #1\relax \advance \bidipoem@hvind -\bidipoem@hvlen 
+\bidipoem@hvind \textwidth
+\bidipoem@hvlen #1\relax \advance \bidipoem@hvind -\bidipoem@hvlen
 \ifx [#2\def \bidipoem@next {\bidipoem@set@verseI [}\else
 \bidipoem@@hvlen \bidipoem@hvlen \def \bidipoem@next {\bidipoem@set@@verse {#2}}\fi \bidipoem@next }
 
@@ -6595,14 +6595,14 @@ bidi implementation of tufte title]
 \bidipoem@@hvlen #1\relax \bidipoem@set@@verse }
 
 \newcommand*{\bidipoem@set@@verse}[1]{% separation
-\advance \bidipoem@hvind -\bidipoem@@hvlen \bidipoem@hvsep #1\relax 
+\advance \bidipoem@hvind -\bidipoem@@hvlen \bidipoem@hvsep #1\relax
 \advance \bidipoem@hvind -\bidipoem@hvsep  \divide \bidipoem@hvind 2 }
 
 \newcommand*{\traditionalconnverses}[3]{% first half-verse, connection, second half-verse
 \ifdim 0pt > \bidipoem@hvind %
 \bidipoem@spreadbox \bidipoem@hvlen {#1}\\ \hfill % first block
 \else
-\noindent \hskip \bidipoem@hvind \relax \bidipoem@spreadbox \bidipoem@hvlen {#1}\fi 
+\noindent \hskip \bidipoem@hvind \relax \bidipoem@spreadbox \bidipoem@hvlen {#1}\fi
 \bidipoem@spreadbox \bidipoem@hvsep {#2}% separator
 \bidipoem@spreadbox \bidipoem@@hvlen {#3}% second block
 \par }
@@ -8588,7 +8588,7 @@ bidi implementation of tufte title]
 \let\textwidthfootnoterule\relax
 \let\LRfootnoterule\relax
 \def\footnoterule{\kern-3\p@
-  \hrule \@width  \DFNcolumnwidth \kern 2.6\p@}%   
+  \hrule \@width  \DFNcolumnwidth \kern 2.6\p@}%
 \AtBeginDocument{\let\dfn@latex@footnotetext\@footnotetext
 \let\@footnotetext\dfn@footnotetext}
 \long\def\dfn@LTRfootnotetext#1{{\setbox\dfn@boxa\vbox{
@@ -8745,7 +8745,7 @@ bidi implementation of tufte title]
 \renewcommand{\dfn@makecol}{\if@RTLmain\dfn@RTLmakecol\else\dfn@LTRmakecol\fi}
 \newcommand{\RTLdfnmakecol}{\renewcommand{\dfn@makecol}{\dfn@RTLmakecol}}
 \newcommand{\LTRdfnmakecol}{\renewcommand{\dfn@makecol}{\dfn@LTRmakecol}}
-\DFNalwaysdouble 
+\DFNalwaysdouble
 %    \end{macrocode}
 % \iffalse
 %</dblfnote-xetex-bidi.def>
@@ -9150,7 +9150,7 @@ bidi implementation of tufte title]
      \markboth{}{}\par}%
     \nobreak
     \vskip 3ex
-    \@afterheading}  
+    \@afterheading}
  \def\@spart#1{%
     {\parindent \z@ \if@RTL\raggedleft\else\raggedright\fi
      \interlinepenalty \@M
@@ -9176,7 +9176,7 @@ bidi implementation of tufte title]
       \sfcode`\.\@m}
      {\def\@noitemerr
        {\@latex@warning{Empty `thebibliography' environment}}%
-      \endlist}  
+      \endlist}
 \renewcommand\left@footnoterule{%
   \kern-3\p@
   \hrule\@width.4\columnwidth
@@ -9276,7 +9276,7 @@ bidi implementation of tufte title]
 \renewcommand\thesubsection   {\thesection\@SepMark\@arabic\c@subsection}
 \renewcommand\thesubsubsection{\thesubsection \@SepMark\@arabic\c@subsubsection}
 \renewcommand\theparagraph    {\thesubsubsection\@SepMark\@arabic\c@paragraph}
-\renewcommand\thesubparagraph {\theparagraph\@SepMark\@arabic\c@subparagraph}%% 
+\renewcommand\thesubparagraph {\theparagraph\@SepMark\@arabic\c@subparagraph}%%
 %    \end{macrocode}
 % \iffalse
 %</extarticle-xetex-bidi.def>
@@ -9552,7 +9552,7 @@ bidi implementation of tufte title]
 \newcommand{\@preamnormalfmt}{%
   \parindent 1em%
   \noindent
-} 
+}
 \newcommand{\@normalfootfmt}[1]{%
   \@preamnormalfmt
   \footfootmark
@@ -9583,7 +9583,7 @@ bidi implementation of tufte title]
       \csname p@footnote\endcsname\@thefnmark}%
     \color@begingroup
       \@normalfootfmt{#1}%
-    \color@endgroup}%    
+    \color@endgroup}%
       \m@mmf@prepare}
 \renewcommand{\@RTLfootnotetext}[1]{%
     \insert\footins{%
@@ -9597,7 +9597,7 @@ bidi implementation of tufte title]
       \csname p@footnote\endcsname\@thefnmark}%
     \color@begingroup
       \@normalRTLfootfmt{#1}%
-    \color@endgroup}%    
+    \color@endgroup}%
       \m@mmf@prepare}
 \renewcommand{\@LTRfootnotetext}[1]{%
     \insert\footins{%
@@ -9611,7 +9611,7 @@ bidi implementation of tufte title]
       \csname p@footnote\endcsname\@thefnmark}%
     \color@begingroup
       \@normalLTRfootfmt{#1}%
-    \color@endgroup}%    
+    \color@endgroup}%
       \m@mmf@prepare}
 \renewcommand{\@mpfootnotetext}[1]{%
   \global\setbox\@mpfootins\vbox{\if@RTL@footnote\@RTLtrue\else\@RTLfalse\fi%
@@ -10928,7 +10928,7 @@ bidi implementation of tufte title]
    \@ifstar\bidi@star@footmarkwidth\bidi@normal@footmarkwidth
 }
 \newcommand{\normalRTLparaLTRfootnotes}{%
-  \@namedef{foottextfontv@r}{\foottextfont}%  
+  \@namedef{foottextfontv@r}{\foottextfont}%
   \@bidi@before@Hy@hyperfootnotes
   \if@RTL@footnote
     \let\@footnotetext\m@mold@footnotetext
@@ -11533,7 +11533,7 @@ bidi implementation of tufte title]
         \let\firstmark\@firstcolfirstmark
         \let\topmark\@firstcoltopmark}%
     \fi
-  \else 
+  \else
     \global\@firstcolumntrue
     \setbox\@outputbox\vbox{%
      \hb@xt@\textwidth{%
@@ -11822,14 +11822,14 @@ bidi implementation of tufte title]
   \newcommand*{\footdir@LeftRightElse}{%
     \footdir@write
     \zifrefundefined{\thefootdir@label}{%
-      \footdir@debug{abspage ??: else}%  
+      \footdir@debug{abspage ??: else}%
       \ltx@thirdofthree
     }{%
       \edef\footdir@abspage{%
         \zref@extractdefault{\thefootdir@label}{abspage}{0}%
       }%
       \ltx@ifundefined{footdir@\footdir@abspage}{%
-        \footdir@debug{\footdir@abspage: else}%   
+        \footdir@debug{\footdir@abspage: else}%
         \ltx@thirdofthree
       }{%
         \if\csname footdir@\footdir@abspage\endcsname L%
@@ -11839,10 +11839,10 @@ bidi implementation of tufte title]
           \footdir@debug{\footdir@abspage: right}%
           \expandafter\ltx@secondofthree
         \fi
-      }%   
-    }%     
-  }%       
-%}          
+      }%
+    }%
+  }%
+%}
 \newcommand*{\footdir@fntext}[1]{%
   \zifrefundefined{\thefootdir@label}{%
   }{%
@@ -11853,7 +11853,7 @@ bidi implementation of tufte title]
       \expandafter\gdef\csname\footdir@name\endcsname{#1}%
     }{}%
   }%
-}  
+}
 
 \newcommand*{\footdir@temp}[3]{%
   \@ifdefinable{#1}{%
@@ -11863,7 +11863,7 @@ bidi implementation of tufte title]
       \footdir@fntext{#3}%
       \stepcounter{footdir@label}%
       \footdir@fntext{#3}%
-      \footdir@toks{##1}% 
+      \footdir@toks{##1}%
       \footdir@toks\expandafter{%
         \the\expandafter\footdir@toks
         \expandafter
@@ -11871,15 +11871,15 @@ bidi implementation of tufte title]
       }%
       \expandafter#1\expandafter{\the\footdir@toks}%
     }%
-  }%  
-} 
+  }%
+}
 
 \def\right@footnoterule{%
   \kern-3\p@
   \hbox to \columnwidth{\hskip .6\columnwidth \hrulefill }
   \kern2.6\p@}
 \def\left@footnoterule{\kern-3\p@
-  \hrule \@width .4\columnwidth \kern 2.6\p@} 
+  \hrule \@width .4\columnwidth \kern 2.6\p@}
 \def\textwidth@footnoterule{\kern-3\p@
   \hrule \@width \columnwidth \kern 2.6\p@}
 \def\leftfootnoterule{%
@@ -11897,10 +11897,10 @@ bidi implementation of tufte title]
 
 \def\auto@footnoterule{%
 \footdir@LeftRightElse%
-\left@footnoterule%  
-\right@footnoterule% 
 \left@footnoterule%
-}  
+\right@footnoterule%
+\left@footnoterule%
+}
 
 
 
@@ -12009,14 +12009,14 @@ bidi implementation of tufte title]
     \color@endgroup}}%
 
 \AtBeginDocument{%
-\if@RTL@footnote    
-  \newcommand*{\bidi@footdir@footnote}{R}   
+\if@RTL@footnote
+  \newcommand*{\bidi@footdir@footnote}{R}
 \else
   \newcommand*{\bidi@footdir@footnote}{L}
 \fi%
 }
 
-\footdir@temp\footdir@ORG@bidi@footnotetext\@footnotetext{\bidi@footdir@footnote}%    
+\footdir@temp\footdir@ORG@bidi@footnotetext\@footnotetext{\bidi@footdir@footnote}%
 \footdir@temp\footdir@ORG@bidi@RTLfootnotetext\@RTLfootnotetext{R}%
 \footdir@temp\footdir@ORG@bidi@LTRfootnotetext\@LTRfootnotetext{L}%
 
@@ -12204,7 +12204,7 @@ bidi implementation of tufte title]
            \vskip \fb@frh \@plus\pagestretch \@minus.8\pageshrink
            \kern137sp\kern-137sp\penalty-30
            \unvbox\@tempboxa}%
-        \edef\fb@resto@set{\boxmaxdepth\the\boxmaxdepth 
+        \edef\fb@resto@set{\boxmaxdepth\the\boxmaxdepth
                            \splittopskip\the\splittopskip}%
         \boxmaxdepth\z@ \splittopskip\z@
 |      \message{^^JPadded box of size \the\ht\@tempboxa\space split to \the\dimen@}%
@@ -12214,7 +12214,7 @@ bidi implementation of tufte title]
 |       \toks98\expandafter{\splitbotmark}%
 |       \message{Marks are: \the\toks99, \the\toks98. }%
         \setbox\tw@\vbox{\unvbox\tw@}% natural-sized
-|       \message{Natural height of split box is \the\ht\tw@, leaving 
+|       \message{Natural height of split box is \the\ht\tw@, leaving
 |          \the\ht\@tempboxa\space remainder. }%
         % If the split-to size > (\vsize-\topskip), then set box to full size.
         \begingroup
@@ -12244,7 +12244,7 @@ bidi implementation of tufte title]
         \ifdim\lastkern=-137sp % whole box went to next page
 |          \message{box split at beginning! }%
            % need work here???
-           \egroup \fb@resto@set \eject % (\vskip for frame size was discarded) 
+           \egroup \fb@resto@set \eject % (\vskip for frame size was discarded)
            \fb@adjheight
            \fb@put@frame#1#2% INSERTED ???
         \else % Got material split off at the head
@@ -12286,18 +12286,18 @@ bidi implementation of tufte title]
    \let\'\@acci\let\`\@accii\let\=\@acciii
    %  \message{FrameRestore:
    %    \@totalleftmargin=\the \@totalleftmargin,
-   %    \rightmargin=\the\rightmargin, 
+   %    \rightmargin=\the\rightmargin,
    %    \@listdepth=\the\@listdepth.  }%
    % Test if we are in a list (or list-like paragraph)
-   \ifnum \ifdim\@totalleftmargin>\z@ 1\fi  
+   \ifnum \ifdim\@totalleftmargin>\z@ 1\fi
           \ifdim\rightmargin>\z@ 1\fi
           \ifnum\@listdepth>\z@ 1\fi 0>\z@
      %     \message{In a list: \linewidth=\the\linewidth, \@totalleftmargin=\the\@totalleftmargin,
-     %       \parshape=\the\parshape, \columnwidth=\the\columnwidth, \hsize=\the\hsize, 
+     %       \parshape=\the\parshape, \columnwidth=\the\columnwidth, \hsize=\the\hsize,
      %       \labelwidth=\the\labelwidth. }%
      \@setminipage % snug fit around the item
      % Now try to propageate changes of width from \hsize to list parameters.
-     % This is deficient, but a more advanced way to indicate modification to text 
+     % This is deficient, but a more advanced way to indicate modification to text
      % dimensions is not (yet) provided; in particular, no separate left/right
      % adjustment.
      \advance\linewidth-\columnwidth \advance\linewidth\hsize
@@ -12554,10 +12554,10 @@ bidi implementation of tufte title]
 \long\def\@makefntext#1{\parindent 1em
    \noindent\hbox to 2em{}%
    \llap{\@thefnmark\hbox{.}\,\,}#1}
-   
+
 \setlength{\skip\@bidi@copyins@}
           {10pt plus 5pt minus 3pt}
-\AtBeginDocument{\prepare@bidi@copyins}   
+\AtBeginDocument{\prepare@bidi@copyins}
 %    \end{macrocode}
 % \iffalse
 %</ftnright-xetex-bidi.def>
@@ -12828,7 +12828,7 @@ bidi implementation of tufte title]
 	\ifhv@nonFloat%
   	  \ifhv@onlyText#2%
   	  \else%
-	    \ifx\hv@floatType\hv@figure 
+	    \ifx\hv@floatType\hv@figure
 	      \ifx\relax#1\relax \figcaption{#2}\else\figcaption[#1]{#2}\fi
 	    \else
 	      \ifx\relax#1\relax \tabcaption{#2}\else\tabcaption[#1]{#2}\fi%
@@ -13740,7 +13740,7 @@ bidi implementation of tufte title]
 \def\right@footnoterule{%
   \kern-.4\p@
   \hbox to \columnwidth{\hskip \dimexpr\columnwidth-5pc\relax \hrulefill }
-  \kern11\p@\kern-\footnotesep} 
+  \kern11\p@\kern-\footnotesep}
 \def\left@footnoterule{\kern-.4\p@
         \hrule\@width 5pc\kern11\p@\kern-\footnotesep}
 \def\@makefnmark{%
@@ -14037,14 +14037,14 @@ bidi implementation of tufte title]
      RTL:\chardef\bidi@lst@caption@direction\@ne\\%
      LTR:\chardef\bidi@lst@caption@direction\z@%
     }{\PackageError{Listings}{direction #1 unknown}\@ehc}}
-    
+
 \lst@Key{captionscript}{textscript}{%
     \lstKV@SwitchCases{#1}%
     {textscript:\\%
      latin:\chardef\bidi@lst@caption@script\@ne\\%
      nonlatin:\chardef\bidi@lst@caption@script\z@%
     }{\PackageError{Listings}{direction #1 unknown}\@ehc}}
-    
+
 \newcommand*{\bidi@lst@ensure@caption@direction}[2]{%
    \@ifundefined{bidi@lst@caption@direction}{}{%
     \ifnum\bidi@lst@caption@direction=\z@%
@@ -14541,8 +14541,8 @@ bidi implementation of tufte title]
 \def\LT@p@RTLftntext#1{%
   \edef\@tempa{\the\LT@p@ftn\noexpand\RTLfootnotetext[\the\c@footnote]}%
   \global\LT@p@ftn\expandafter{\@tempa{#1}}}%
-  
-  
+
+
 \def\LT@output{%
   \ifnum\outputpenalty <-\@Mi
     \ifnum\outputpenalty > -\LT@end@pen
@@ -15490,7 +15490,7 @@ bidi implementation of tufte title]
                 \global\advance\c@colht by-\ht\@rightcolumn
                 \global\@colht\c@colht
             \fi
-   \else 
+   \else
    \global\@firstcolumntrue
     \global\setbox\@outputbox\vbox to\ht\@leftcolumn{%
                         \unvbox\@rightcolumn
@@ -15590,7 +15590,7 @@ bidi implementation of tufte title]
                 \global\advance\c@colht by-\ht\@rightcolumn
                 \global\@colht\c@colht
             \fi
-  \else 
+  \else
    \global\@firstcolumntrue
     \global\setbox\@outputbox\vbox to\ht\@leftcolumn{%
                         \unvbox\@rightcolumn
@@ -15900,7 +15900,7 @@ bidi implementation of tufte title]
             {I moved some lines to
              the next page.\MessageBreak
              Footnotes on page
-             \thepage\space might be wrong}%    
+             \thepage\space might be wrong}%
          \fi
        \else
          \PackageWarning{multicol}%
@@ -16176,16 +16176,16 @@ bidi implementation of tufte title]
   \advance\@tempcntb\@tempcnta%
   \settowidth{\@tempcnta}{\usebox{\z@}}%
   \setlength{\@tempdima}{\unitlength}%
-  \count@=\z@\Gin@gridfalse\setkeys{Gin}{#1}% 
+  \count@=\z@\Gin@gridfalse\setkeys{Gin}{#1}%
 %
   \OVP@calc%
-%  
+%
   \begin{picture}(\@tempcnta,\@tempcntb)%
     \if@RTL\else\put(0,0){\makebox(0,0)[bl]{\usebox{\z@}}}%
     \ifGin@grid%
       \put(0,0){\normalfont\fontsize\@viipt\@viiipt\selectfont%
         \grid(\@tempcnta,\@tempcntb)(\count@,\count@)[0,0]}%
-    \fi\fi%  
+    \fi\fi%
     % reset the graphics parameter
     \let\Gin@outer@scalex\relax
     \let\Gin@outer@scaley\relax
@@ -16194,7 +16194,7 @@ bidi implementation of tufte title]
     \let\Gin@eheight\Gin@ewidth
     \def\Gin@scalex{1}
     \let\Gin@scaley\Gin@exclamation
-}{% 
+}{%
     \if@RTL\ifGin@grid%
       \put(0,0){\normalfont\fontsize\@viipt\@viiipt\selectfont%
         \grid(\@tempcnta,\@tempcntb)(\count@,\count@)[0,0]}%
@@ -16209,7 +16209,7 @@ bidi implementation of tufte title]
 %\fi
 % \section{File \texttt{pdfbase-xetex-bidi.def}}
 %    \begin{macrocode}
-\ProvidesFile{pdfbase-xetex-bidi.def}[2018/09/29 v0.2 bidi adaptations for pdfbase package for XeTeX engine]
+\ProvidesFile{pdfbase-xetex-bidi.def}[2020/01/28 v0.3 bidi adaptations for pdfbase package for XeTeX engine]
 \ExplSyntaxOn
 \cs_set_eq:NN\pbs_outputpage_orig:\@outputpage
 \cs_set_nopar:Npn\@outputpage{
@@ -16225,12 +16225,12 @@ bidi implementation of tufte title]
   \hbox_set:Nn\@outputbox{
     %begin of page
     \hbox_overlap_right:n{\seq_map_inline:Nn\g_pbs_bop_seq{##1}}
-    \box_use_clear:N\@outputbox
+    \box_use_drop:N\@outputbox
     %end of page
     \hbox_overlap_right:n{\seq_map_inline:Nn\g_pbs_eop_seq{##1}}
   }
   \bool_if:NT\l_pbs_is_vertical_bool{
-    \vbox_set:Nn\@outputbox{\box_use_clear:N\@outputbox}
+    \vbox_set:Nn\@outputbox{\box_use_drop:N\@outputbox}
   }
   \pbs_outputpage_orig:
 }
@@ -16315,10 +16315,10 @@ bidi implementation of tufte title]
 \def\endpgfpicture{%
               \ifpgfrememberpicturepositiononpage%
                 \hbox to0pt{\pgfsys@markposition{\pgfpictureid}}%
-              \fi%    
+              \fi%
               % ok, now let's position the box
               \ifdim\pgf@picmaxx=-16000pt\relax%
-                % empty picture. make size 0.  
+                % empty picture. make size 0.
                 \global\pgf@picmaxx=0pt\relax%
                 \global\pgf@picminx=0pt\relax%
                 \global\pgf@picmaxy=0pt\relax%
@@ -16328,14 +16328,14 @@ bidi implementation of tufte title]
               \pgf@relevantforpicturesizefalse%
               \pgf@process{\pgf@baseline}%
               \xdef\pgf@shift@baseline{\the\pgf@y}%
-              % 
+              %
               \pgf@process{\pgf@trimleft}%
               \global\advance\pgf@x by-\pgf@picminx
               % prepare \hskip\pgf@trimleft@final.
               % note that \pgf@trimleft@final is also queried
               % by the pgf image externalization.
               \xdef\pgf@trimleft@final{-\the\pgf@x}%
-              % 
+              %
               \pgf@process{\pgf@trimright}%
               \global\advance\pgf@x by-\pgf@picmaxx
               % prepare \hskip\pgf@trimright@final.
@@ -16349,7 +16349,7 @@ bidi implementation of tufte title]
           \egroup%
       \pgf@restore@layerlist@from@global
           \pgf@insertlayers%
-        \endgroup%    
+        \endgroup%
         \pgfsys@discardpath%
         \endgroup%
       \pgfsys@endscope%
@@ -17926,7 +17926,7 @@ to\rtside{\box\bslice\hfil}}
   \ifx\@textbottom\relax\else\vskip \z@ \@plus.05fil\fi
   {\usekomafont{footnoterule}{%
       \hbox to \columnwidth{\hskip \dimexpr\columnwidth-\ftn@rule@width\relax  \leavevmode\leaders\hrule\@height\ftn@rule@height\hfill\kern\z@}}}%
-  \kern 2.6\p@} 
+  \kern 2.6\p@}
 \renewcommand*\maketitle[1][1]{%
   \if@titlepage
     \begin{titlepage}
@@ -18482,7 +18482,7 @@ to\rtside{\box\bslice\hfil}}
   \ifx\@textbottom\relax\else\vskip \z@ \@plus.05fil\fi
   {\usekomafont{footnoterule}{%
       \hbox to \columnwidth{\hskip \dimexpr\columnwidth-\ftn@rule@width\relax  \leavevmode\leaders\hrule\@height\ftn@rule@height\hfill\kern\z@}}}%
-  \kern 2.6\p@} 
+  \kern 2.6\p@}
 \renewcommand*\maketitle[1][1]{%
   \if@titlepage
     \begin{titlepage}
@@ -19195,7 +19195,7 @@ to\rtside{\box\bslice\hfil}}
   \ifx\@textbottom\relax\else\vskip \z@ \@plus.05fil\fi
   {\usekomafont{footnoterule}{%
       \hbox to \columnwidth{\hskip \dimexpr\columnwidth-\ftn@rule@width\relax  \leavevmode\leaders\hrule\@height\ftn@rule@height\hfill\kern\z@}}}%
-  \kern 2.6\p@}  
+  \kern 2.6\p@}
 \renewcommand*\maketitle[1][1]{%
   \if@titlepage
     \begin{titlepage}
@@ -19955,7 +19955,7 @@ to\rtside{\box\bslice\hfil}}
   \global\TX@ftn\expandafter{\@tempa{#1}}}%
 \long\def\TX@xLTRftntext[#1]#2{%
   \global\TX@ftn\expandafter{\the\TX@ftn\LTRfootnotetext[#1]{#2}}}
-  
+
 \long\def\TX@RTLftntext#1{%
   \edef\@tempa{\the\TX@ftn\noexpand\RTLfootnotetext
                     [\the\csname c@\@mpfn\endcsname]}%
@@ -20114,7 +20114,7 @@ to\rtside{\box\bslice\hfil}}
   \else\ifnum\ttl@b<\ttl@a
     \addpenalty{\@secpenalty}%
   \else
-    \addpenalty{\z@}% 
+    \addpenalty{\z@}%
   \fi\fi
   \ttl@contentsstretch
   \nobreak
@@ -21524,7 +21524,7 @@ to\rtside{\box\bslice\hfil}}
     \@todonotes@drawMarginNote%
     \if@RTL\@todonotes@drawLineToLeftMargin\else\@todonotes@drawLineToRightMargin\fi%
 }%
-}%  
+}%
 \renewcommand{\@todonotes@drawMarginNote}{%
 \if@todonotes@dviStyle%
     \begin{tikzpicture}[remember picture]%
@@ -21916,7 +21916,7 @@ to\rtside{\box\bslice\hfil}}
 \def\endbidi@tabular@RTLcases{\endarray \right\rbrace$\egroup}
 }{%
 \def\@bidi@tabular@RTLcases{\@RTLtabtrue%
-   \leavevmode \hbox \bgroup 
+   \leavevmode \hbox \bgroup
    $\left.\let\@acol\@tabacol
    \let\@classz\@tabclassz
    \let\@classiv\@tabclassiv \let\\\@tabularcr\@tabarray}
@@ -22157,7 +22157,7 @@ $\@@underline{\hbox{#1}}\m@th$\relax\fi\fi}
      \hb@xt@\@pnumwidth{{\hfil\normalfont \normalcolor #5}}%
      \par}%
   \fi}
-  
+
 \newcount\bidi@column@check@number
 
 \def\bidi@column@status#1{\gdef\bidi@current@column@status{#1}}
@@ -22194,7 +22194,7 @@ $\@@underline{\hbox{#1}}\m@th$\relax\fi\fi}
                                {\bidi@column@type}}}%
   \next
 }
- 
+
 \AtEndDocument{\def\bidi@set@column@status#1#2{%
      \ifnum #2=\bidi@current@column@status\else
        \@tempswatrue
@@ -22519,7 +22519,7 @@ $\@@underline{\hbox{#1}}\m@th$\relax\fi\fi}
         \else
           \let\@themargin\oddsidemargin
         \fi
-    \else \let\@thehead\@evenhead \let\@thefoot\@evenfoot 
+    \else \let\@thehead\@evenhead \let\@thefoot\@evenfoot
        \if@RTLmain
          \let\@themargin\oddsidemargin
        \else
@@ -24833,7 +24833,7 @@ This is right in LTR
 \pagestyle{empty}
 
 % Each new chapter sets \thispagestyle{\chapterfirstpagestyle}, change this empty as well
-\renewcommand{\chapterfirstpagestyle}{empty} 
+\renewcommand{\chapterfirstpagestyle}{empty}
 
 % Now make a frame in which to put my own customized footer
 \newdynamicframe[>1]{\textwidth}{\headheight}{0pt}{-\footskip}[footer]
@@ -24864,15 +24864,15 @@ page \thepage\ of \pageref*{lastpage}}
 \chapter{Introduction}
 
 The \textsl{flowfram} package is designed to enable you to create
-frames in a document such that the 
-contents of the \env{document} environment flow from one 
-frame to the next in the order that they were defined.  
+frames in a document such that the
+contents of the \env{document} environment flow from one
+frame to the next in the order that they were defined.
 This is useful for creating posters
-or magazines or any other form of document that does not 
+or magazines or any other form of document that does not
 conform to the standard one or two column layout.
 
 This is a modified version of the manual for the \textsl{flowfram} package.
-It is intended to illustrated what can be done. See the full 
+It is intended to illustrated what can be done. See the full
 manual (ffuserguide.pdf) for
 a comprehensive description, as some parts of this document
 may now be out of date.
@@ -24885,8 +24885,8 @@ This is column~\thedisplayedframe.
 The main type of frame is the flow frame. This is described on
 column~\ref{flow:flowframe} on page~\pageref{flow:flowframe}.
 The order used to draw the contents of each frame on the page
-is described in column~\ref{flow:stacking} on 
-page~\pageref{flow:stacking}. Floats are describe in 
+is described in column~\ref{flow:stacking} on
+page~\pageref{flow:stacking}. Floats are describe in
 column~\ref{flow:floats} on page~\pageref{flow:floats}.
 
 \chapter{Setting up Frames}
@@ -24894,16 +24894,16 @@ column~\ref{flow:floats} on page~\pageref{flow:floats}.
 This is column~\thedisplayedframe.
 
 The \textsl{flowfram} package provides three types of frame:
-{flow frames}, {static 
+{flow frames}, {static
 frames} and {dynamic frames}.
 
 \section*{Flow Frames}
 
 \labelflow{flow:flowframe}
 The flow frame is the principle type of frame.
-The text of the \env{document} environment will flow from 
-one frame to the next in order of definition. Each 
-flow frame has an associated width, height, 
+The text of the \env{document} environment will flow from
+one frame to the next in order of definition. Each
+flow frame has an associated width, height,
 position on the page, and optionally a border.
 
 It is recommended that all the flow frames in a document
@@ -24911,7 +24911,7 @@ have the same width, otherwise problems may occur
 when a paragraph spans to flow frames of unequal
 widths. This is because \TeX's output routine does not
 register the change in \cmdname{hsize} until it reaches
-a paragraph break. If it is absolutely necessary for 
+a paragraph break. If it is absolutely necessary for
 flow frames to have unequal widths, judicious use of
 \cmdname{framebreak} is required.
 
@@ -24920,14 +24920,14 @@ flow frames to have unequal widths, judicious use of
 A static frame is a rectangular area in which text neither
 flows into, nor flows out of.  The contents must be set
 explicitly, and once set, the contents of the static frame will
-remain the same on each page until it is explicitly 
-changed.  Thus, a static frame can be used, for example, to make 
+remain the same on each page until it is explicitly
+changed.  Thus, a static frame can be used, for example, to make
 a company logo appear in the same place on every page.
 
 \section*{Dynamic Frames}
 
 A dynamic frame is similar to a static frame, but its contents
-are re-typeset on each page. (A static frame stores its 
+are re-typeset on each page. (A static frame stores its
 contents in a savebox, whereas a dynamic frame stores its
 contents in a macro).
 
@@ -24936,14 +24936,14 @@ This is column~\thedisplayedframe.
 \chapter{Frame Attributes}
 \label{sec:modattr}
 
-Once you have defined the {flow frames}, {static frames} and 
-{dynamic frames}, their attributes can be changed. 
-The three types of frame mostly have the 
+Once you have defined the {flow frames}, {static frames} and
+{dynamic frames}, their attributes can be changed.
+The three types of frame mostly have the
 same set of attributes, but some are specific to a certain type.
 The available attributes are as follows
 (\textsuperscript{\textbf{F}} indicates the key is
-only available for {flow frames}, 
-\textsuperscript{\textbf{S}} indicates the key is only available 
+only available for {flow frames},
+\textsuperscript{\textbf{S}} indicates the key is only available
 for {static frames}
 and \textsuperscript{\textbf{D}} indicates the key
 is only available for {dynamic frames}):
@@ -24957,40 +24957,40 @@ is only available for {dynamic frames}):
 
 \item[y=\meta{length}]\mbox{}\par The y-coordinate of the frame.
 
-\item[border=\meta{style}]\mbox{}\par The style of the border around the 
+\item[border=\meta{style}]\mbox{}\par The style of the border around the
 frame, this can take the values: \texttt{none} (no border),
-\texttt{plain} (plain border) or the name of a \LaTeX\ 
-frame making command without the preceding backslash. 
+\texttt{plain} (plain border) or the name of a \LaTeX\
+frame making command without the preceding backslash.
 The value \texttt{fbox} is equivalent to \texttt{plain}.
 
-\item[offset=\meta{offset}]\mbox{}\par The border offset, if it is a 
+\item[offset=\meta{offset}]\mbox{}\par The border offset, if it is a
 user-defined border.  This is the distance from the outer
 edge of the left hand border to the left edge of the
 bounding box of the text inside the border.  The \textsl{flowfram}
-package is able to compute the border for 
-known frame making commands. 
-If you define your own frame making command, you may need to 
-specify the offset explicitly, or the frames 
+package is able to compute the border for
+known frame making commands.
+If you define your own frame making command, you may need to
+specify the offset explicitly, or the frames
 may end up shifted to the right or left.
 
 \item[bordercolor=\meta{colour}]\mbox{}\par The colour of the border
 if you are using a standard frame making command.
 The colour can either be specified as, e.g.\ \texttt{green},
-or including the colour model, for example 
+or including the colour model, for example
 \verb/[rgb]{0,1,0}/.
 
-\item[textcolor=\meta{colour}]\mbox{}\par The text colour for that 
-frame. Again, the colour can either be specified as, 
-e.g.\ \texttt{green}, or including the colour model, 
+\item[textcolor=\meta{colour}]\mbox{}\par The text colour for that
+frame. Again, the colour can either be specified as,
+e.g.\ \texttt{green}, or including the colour model,
 for example \verb/[rgb]{0,1,0}/.
 
-\item[pages=\meta{page list}]\mbox{}\par The {list of 
+\item[pages=\meta{page list}]\mbox{}\par The {list of
 pages} for which the frame
 should appear. This can either have the values: \texttt{all},
-\texttt{even}, \texttt{odd} or \texttt{none} (the latter 
+\texttt{even}, \texttt{odd} or \texttt{none} (the latter
 removes the frame from that point on---useful if you
-have multiple pages with the same number), or it can be a 
-comma-separated list of single pages, or 
+have multiple pages with the same number), or it can be a
+comma-separated list of single pages, or
 {page ranges}.
 
 \item[margin=\meta{side}\textsuperscript{F}]\mbox{}\par The side of
@@ -25002,13 +25002,13 @@ is set, the static frame will be cleared at the start of the
 next page.
 
 \item[style=\meta{cmd}\textsuperscript{D}]\mbox{}\par This should be
-the name of a command \emph{without} the preceding backslash, 
-to be applied to the contents of the specified dynamic frame. 
+the name of a command \emph{without} the preceding backslash,
+to be applied to the contents of the specified dynamic frame.
 The command may either be a declaration, for example \verb/style=large/
 which will set the contents of all the dynamic frames in a
 large font, or it can be a command that takes a single argument,
 for example \verb/style=textbf/
-which will make the text for all the dynamic frames come out in 
+which will make the text for all the dynamic frames come out in
 bold.  To unset a style, do \verb/style=none/.
 
 \end{description}
@@ -25020,17 +25020,17 @@ bold.  To unset a style, do \verb/style=none/.
 The \textsl{flowfram} package has the package option \texttt{draft}
 which will draw the {bounding boxes} for
 each frame defined.  At the bottom right of each
-bounding box (except for the bounding box denoting the 
+bounding box (except for the bounding box denoting the
 typeblock), a marker will be shown to indictate the type
 of frame, its IDN and its IDL.
 
 You can see the layout for the current page (irrespective of
 whether or not the \texttt{draft} option has been set) using
-the command:\newline 
+the command:\newline
 \cmdname{flowframeshowlayout}
 
 The headers and footers will appear as usual (but will not
-be shown in draft mode), according to the format given by 
+be shown in draft mode), according to the format given by
 \cmdname{pagestyle}.
 
 \section*{Frame Stacking Order}
@@ -25052,43 +25052,43 @@ package option has been used.
 \end{enumerate}
 
 This ordering can be used to determine if you want something
-to overlay or underlay everything else on the page. 
+to overlay or underlay everything else on the page.
 
 \section*{Prematurely Ending a Flow Frame}
 
 You can force text to move immediately to the next defined
 flow frame using one of the standard \LaTeX\ page breaking commands
 which  work in an analogous way to the way they
-work in standard two column mode. 
+work in standard two column mode.
 
 The command \cmdname{framebreak} is provided for situations
 where a paragraph spans two flow frames
-of different widths, as \TeX's output routine does not 
-adjust to the new value of \cmdname{hsize} until the last 
-paragraph of the previous frame has ended. As a 
+of different widths, as \TeX's output routine does not
+adjust to the new value of \cmdname{hsize} until the last
+paragraph of the previous frame has ended. As a
 result, the end of the paragraph at the beginning of the new
 flow frame retains the width of the previous flow frame.
 
-If you want to start a new page, rather than simply move to the 
+If you want to start a new page, rather than simply move to the
 next frame, use the command\newline
 \cmdname{finishthispage}.
 
 \section*{Floats}
 
 \labelflow{flow:floats}
-Since floats (such as figures and tables) can only go in 
+Since floats (such as figures and tables) can only go in
 {flow frames}, this package provides
-the additional environments: 
-\env{staticfigure} and  
+the additional environments:
+\env{staticfigure} and
 \env{statictable} which can be used in static frames
 and dynamic frames. Unlike their \env{figure} and
 \env{table} counterparts, they are fixed in place, and
-so do not take an optional placement specifier. The 
-\cmdname{caption} and \cmdname{label} commands can 
+so do not take an optional placement specifier. The
+\cmdname{caption} and \cmdname{label} commands can
 be used within \env{staticfigure} and \env{statictable} as
 usual.
 
-The standard \env{figure} and \env{table} commands will 
+The standard \env{figure} and \env{table} commands will
 behave as usual in the flow frames, but their starred versions,
 \env{figure*} and \env{table*} behave no differently
 from \env{figure} and \env{table}.
@@ -25098,13 +25098,13 @@ from \env{figure} and \env{table}.
 The following macros can be changed using\linebreak \cmdname{renewcommand}:
 
 \begin{itemize}
-\item \cmdname{setffdraftcolor} 
+\item \cmdname{setffdraftcolor}
 
 This sets the colour of the bounding box
 when it is displayed in draft mode.
 
-\item 
-\cmdname{setffdrafttypeblockcolor} 
+\item
+\cmdname{setffdrafttypeblockcolor}
 
 This sets the colour of
 the bounding box of the typeblock when it is displayed
@@ -25112,7 +25112,7 @@ in draft mode.
 
 \item \cmdname{fflabelfont}
 
-This sets the font size for the bounding box markers in 
+This sets the font size for the bounding box markers in
 draft mode.
 
 \end{itemize}
@@ -25129,7 +25129,7 @@ bounding box at which to place the bounding box marker.
 \item \cmdname{flowframesep}
 
 This is the gap between the text of the frame and
-its border, for the standard border types. 
+its border, for the standard border types.
 
 \item \cmdname{flowframerule}
 
@@ -25613,4 +25613,3 @@ Lion & Yellow & Elephants & Tartare \\\cline{4-4}
 % \typeout{*************************************************************}
 %
 \endinput
-
