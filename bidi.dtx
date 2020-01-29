@@ -230,6 +230,10 @@ by Vafa Khalighi.
 %\RecordChanges
 \begin{document}
   \DocInput{\jobname.dtx}
+  \expandafter\def\expandafter\theindex\expandafter{%
+        \theindex
+        \hfuzz70pt\relax
+        \hbadness100000\relax}
   \PrintIndex
 %  \PrintChanges
 \end{document}
