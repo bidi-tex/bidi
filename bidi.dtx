@@ -5,7 +5,7 @@
 %<*readme>
 ___________________
 The bidi package
-v35.10
+v35.11
 
 This package provides a convenient interface for typesetting
 bidirectional texts in Plain TeX and LaTeX, using XeTeX engine.
@@ -15,18 +15,20 @@ documentation, or ask for any new features, or suggest any
 improvements, or ask any questions about the package, then
 please use the issue tracker:
 
-  <https://github.com/vafa-ac/bidi/issues>
+  <https://github.com/bidi-tex/bidi/issues>
 
 In doing so, please always explain your issue well enough,
 and always include a minimal working example showing the
 issue.
 
-Current version release date: 2019/10/19
+Current version release date: 2020-01-29
 
 ___________________
-Vafa Khalighi
 
-Copyright (c) 2007--2019
+
+Copyright (c) Vafa Khalighi                2007-2019
+              bidi-tex GitHub Organisation 2018-2020
+
 It may be distributed and/or modified under the LaTeX Project Public License,
 version 1.3c or higher (your choice). The latest version of
 this license is at: http://www.latex-project.org/lppl.txt
@@ -44,14 +46,15 @@ by Vafa Khalighi.
 \preamble
 
   __________________________________________________
-  Copyright (c) 2009--2019  Vafa Khalighi
+  Copyright (c) 2009-2019 Vafa Khalighi
+                2018-2020 bidi-tex GitHub Organisation
 
   It may be distributed and/or modified under the LaTeX Project Public License,
   version 1.3c or higher (your choice). The latest version of
   this license is at: http://www.latex-project.org/lppl.txt
 
   This work is “author-maintained” (as per LPPL maintenance status)
-  by Vafa Khalighi.
+  by bidi-tex GitHub Organisation.
 
 
 \endpreamble
@@ -209,16 +212,13 @@ by Vafa Khalighi.
 \generate{\file{test-tabularx.tex}{\from{\jobname.dtx}{test-tabularx.tex}}}
 \generate{\file{test-tabulary.tex}{\from{\jobname.dtx}{test-tabulary.tex}}}
 \endgroup
-\immediate\write18{mv README.txt README}
-\immediate\write18{makeindex -s gind.ist -o \jobname.ind  \jobname.idx}
-\immediate\write18{makeindex -s gglo.ist -o \jobname.gls  \jobname.glo}
 %</internal>
 %
 %<*driver>
 \documentclass{ltxdoc}
 \input{bidi-doc-preamble.ltx}
 \hypersetup{%
-  pdftitle={Source documentation for version 35.10 of the bidi
+  pdftitle={Source documentation for version 35.11 of the bidi
                 package}%
 }
 \EnableCrossrefs
@@ -237,8 +237,8 @@ by Vafa Khalighi.
 % \GetFileInfo{\jobname.dtx}
 % \title{\textcolor{blue!65!black}{\Huge The \textsf{bidi} \textit{Package}}\\
 %\LARGE Bidirectional typesetting in plain \TeX{} and \LaTeX, using \XeTeX{} engine\\[5pt]
-%\large Source documentation for \textcolor{blue!65!black}{version 35.10}}
-% \author{Vafa Khalighi}
+%\large Source documentation for \textcolor{blue!65!black}{version 35.11}}
+% \author{Vafa Khalighi\thanks{Maintained by bidi-tex \url{https://github.com/bidi-tex}}}
 %\setcounter{page}{0}
 %\thispagestyle{empty}
 %\includegraphics[width=.3\textwidth]{bidi-logo}\qquad
@@ -247,7 +247,7 @@ by Vafa Khalighi.
 %\textcolor{blue!65!black}{\Huge The \textsf{bidi} \textit{Package}}
 %
 %\Large
-%Source documentation for \textcolor{blue!65!black}{version 35.10}}
+%Source documentation for \textcolor{blue!65!black}{version 35.11}}
 %
 %\vskip 0pt plus 3fill
 %\textit{\large to my Master, \textbf{Ferdowsi The Great}}
@@ -258,7 +258,7 @@ by Vafa Khalighi.
 %or ask for any new features, or suggest any improvements, or ask any questions about the package, then please use the issue tracker:
 %
 %\medskip
-%  \centerline{\url{https://github.com/vafa-ac/bidi/issues}}
+%  \centerline{\url{https://github.com/bidi-tex/bidi/issues}}
 %
 %\medskip
 %In doing so, please always explain your issue well enough, and always include
@@ -268,7 +268,8 @@ by Vafa Khalighi.
 %
 %\vskip 0pt plus 3fill
 %
-%Copyright (c) 2007--2019 Vafa Khalighi
+%Copyright (c) 2007-2019 Vafa Khalighi
+%              2018-2020 bidi-tex GitHub Organisation
 %
 %\medskip
 %Permission is granted to distribute and/or modify \emph{both the documentation and the code} under the conditions of the \LaTeX{} Project Public License, either version 1.3c of this license or (at your option) any later version.
@@ -1894,8 +1895,8 @@ by Vafa Khalighi.
 % \section{File \texttt{bidi.sty}}
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
-\def\bididate{2019/10/19}
-\def\bidi@version{35.10}
+\def\bididate{2020-01-29}
+\def\bidi@version{35.11}
 \ProvidesPackage{bidi}[\bididate\space v\bidi@version\space
 Bidirectional typesetting in plain TeX and LaTeX]
 \edef\@bidi@info{****************************************************^^J%
@@ -1909,6 +1910,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
 * for use with many other commonly-used packages.^^J%
 * ^^J%
 * Copyright (c) 2009--2019 Vafa Khalighi^^J%
+*               2018-2020 bidi-tex GitHub Organisation^^J%
 * ^^J%
 * v\bidi@version, \bididate^^J%
 * ^^J%
@@ -1917,7 +1919,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
 * ^^J%
 * Location on CTAN: /macros/xetex/latex/bidi^^J%
 * ^^J%
-* Issue tracker: https://github.com/vafa-ac/bidi/issues^^J%
+* Issue tracker: https://github.com/bidi-tex/bidi/issues^^J%
 * ^^J%
 ****************************************************}
 \typeout{\@bidi@info}
@@ -2220,9 +2222,9 @@ Bidirectional typesetting in plain TeX and LaTeX]
 %\fi
 % \section{File \texttt{bidi.tex}}
 %    \begin{macrocode}
-\def\bididate{2019/10/19}
+\def\bididate{2020-01-29}
 \catcode`@=11
-\def\bidi@version{35.10}
+\def\bidi@version{35.11}
 \let \protect \relax
 \newlinechar`\^^J
 \edef\@bidi@info{****************************************************^^J%
@@ -2236,6 +2238,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
 * for use with many other commonly-used packages.^^J%
 * ^^J%
 * Copyright (c) 2009--2019 Vafa Khalighi^^J%
+*               2018-2020 bidi-tex GitHub Organisation^^J%
 * ^^J%
 * v\bidi@version, \bididate^^J%
 * ^^J%
@@ -2244,7 +2247,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
 * ^^J%
 * Location on CTAN: /macros/xetex/latex/bidi^^J%
 * ^^J%
-* Issue tracker: https://github.com/vafa-ac/bidi/issues^^J%
+* Issue tracker: https://github.com/bidi-tex/bidi/issues^^J%
 * ^^J%
 ****************************************************}
 \message{\@bidi@info}
@@ -3080,7 +3083,7 @@ Bidirectional typesetting in plain TeX and LaTeX]
 % \section{File \texttt{biditools.sty}}
 %    \begin{macrocode}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{biditools}[2019/10/19 v1.10 Programming tools for bidi package]
+\ProvidesPackage{biditools}[2020-01-29 v1.10 Programming tools for bidi package]
 \providecommand{\@bidi@saveprimitive}[2]{\begingroup\escapechar`\\\relax
   \edef\@tempa{\string#1}\edef\@tempb{\meaning#1}%
   \ifx\@tempa\@tempb \global\let#2#1%
@@ -15719,7 +15722,7 @@ bidi implementation of tufte title]
 %\fi
 % \section{File \texttt{multicol-xetex-bidi.def}}
 %    \begin{macrocode}
-\ProvidesFile{multicol-xetex-bidi.def}[2019/10/19 v1.2 bidi adaptations for multicol package for XeTeX engine]
+\ProvidesFile{multicol-xetex-bidi.def}[2020-01-29 v1.2 bidi adaptations for multicol package for XeTeX engine]
 \def\page@sofar{%
    \process@cols\mult@rightbox
        {\ifvoid\count@
@@ -24748,7 +24751,7 @@ AAA&BBB&CCC\\\cdashline{1-2}[.4pt/1pt]
 \documentclass{article}
 \usepackage{bidi}
 \title{Testing Basic Bidi Direction Change}
-\author{Vafa Khalighi}
+\author{Vafa Khalighi\thanks{Maintained by bidi-tex \url{https://github.com/bidi-tex}}}
 \begin{document}
 \maketitle
 In this document we test bidi direction change in \textsf{RTL} and \textsf{LTR}. These tests includes \texttt{flushleft}, \texttt{flushright} environments and \verb|\centerline{...}|, \verb|\leftline{...}|,\verb|\rightline{...}|,\verb|\raggedleft| and \verb|\raggedright| macros.
@@ -25348,7 +25351,7 @@ dynamic frame when using one of the \cmdname{Ncolumntop} type of commands.
 \usepackage{supertabular}
 \usepackage{bidi}
 \title{Testing \textsf{supertabular} package in RTL and LTR}
-\author{Vafa Khalighi}
+\author{Vafa Khalighi\thanks{Maintained by bidi-tex \url{https://github.com/bidi-tex}}}
 \begin{document}
 \maketitle
 \section{LTR}
@@ -25465,7 +25468,7 @@ zeta               & GREEK SMALL LETTER ZETA             & 03B6\\
 \documentclass{article}
 \usepackage{bidi}
 \title{Testing \LaTeX's Default Tabular in \textsf{RTL} and \textsf{LTR}}
-\author{Vafa Khalighi}
+\author{Vafa Khalighi\thanks{Maintained by bidi-tex \url{https://github.com/bidi-tex}}}
 \newcommand{\rb}[1]{\raisebox{1.5ex}[0mm]{#1}}
 \begin{document}
 \maketitle
@@ -25531,7 +25534,7 @@ In this document we test \LaTeX's default tabular in \textsf{RTL} and \textsf{LT
 \usepackage{tabularx}
 \usepackage{bidi}
 \title{Testing \textsf{tabularx} Package in RTL and LTR}
-\author{Vafa Khalighi}
+\author{Vafa Khalighi\thanks{Maintained by bidi-tex \url{https://github.com/bidi-tex}}}
 \begin{document}
 \maketitle
 \section{LTR}
@@ -25575,7 +25578,7 @@ Lion & Yellow & Elephants & Tartare \\\cline{4-4}
 \setlength\tymax{\maxdimen}
 \usepackage{bidi}
 \title{Testing \textsf{tabulary} package in RTL and LTR}
-\author{Vafa Khalighi}
+\author{Vafa Khalighi\thanks{Maintained by bidi-tex \url{https://github.com/bidi-tex}}}
 \begin{document}
 \maketitle
 \section{LTR}

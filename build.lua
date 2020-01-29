@@ -6,7 +6,6 @@ installfiles = {'*.def','*.sty','*.jpg','bibitem.pdf'}
 checkengines = {"xetex"}
 stdengine = "xetex"
 typesetexe = "xelatex"
-typesetopts = "--shell-escape "
 typesetfiles = {"bidi.dtx","bidi-doc.ltx"}
 textfiles    =  {"README.md",'bidi.ins'}
 sourcefiles = {"*.dtx"}
@@ -14,6 +13,7 @@ function docinit_hook ()
 return  cp("bi*.pdf", "." ,"build/doc")
 end
 
+packtdszip  = true
 
 checkruns = 2
 
