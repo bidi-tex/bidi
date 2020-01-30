@@ -3,7 +3,6 @@ name: Question
 about: Ask any question about the package
 title: ''
 labels: Question
-assignees: vafa-ac
 
 ---
 
@@ -16,11 +15,9 @@ assignees: vafa-ac
 
 ## Check/indicate
 - [ ] Relevant to the `xepersian` package
-- [ ] [The `xepersian` package issue tracker](https://github.com/vafakhalighi/xepersian/issues) has been searched for similar issues?
+- [ ] [The `xepersian` package issue tracker](https://github.com/bidi-tex/xepersian/issues) has been searched for similar issues?
 - [ ] Issue tracker has been searched for similar issues?
 - [ ] Links to <tex.stackexchange.com> discussion if appropriate
-- [ ] Links to <qa.parsilatex.com> discussion if appropriate
-
 
 
 
