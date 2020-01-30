@@ -6,14 +6,34 @@ installfiles = {'*.def','*.sty','*.jpg','bibitem.pdf'}
 checkengines = {"xetex"}
 stdengine = "xetex"
 typesetexe = "xelatex"
+unpackexe="xelatex"
+unpackfile="bidi.dtx"
 typesetfiles = {"bidi.dtx","bidi-doc.ltx"}
-textfiles    =  {"README.md",'bidi.ins'}
+textfiles    =  {"doc/README.txt",'bidi.ins'}
 sourcefiles = {"*.dtx"}
 function docinit_hook ()
 return  cp("bi*.pdf", "." ,"build/doc")
 end
 
 packtdszip  = true
+
+
+
+bidioldctan=target_list.ctan.func
+
+
+-- still use makectanzip for now.
+
+function no_ctan()
+error("use makectanzip script")
+end
+
+target_list.ctan={
+bundle_func=no_ctan,
+desc="CTAN packaging disabled",
+func=no_ctan
+}
+
 
 checkruns = 2
 
